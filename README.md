@@ -4,7 +4,7 @@ Switchfly-compress: Javascript &amp; CSS compression library for Java
 
 Switchfly-inputvalidation: Input validation library
 
-# License
+# Copyright & License
 Copyright 2012 Switchfly
 
 Licensed under the Apache License, Version 2.0 (the "License");
