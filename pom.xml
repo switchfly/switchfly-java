@@ -13,7 +13,7 @@
     <version>0.1</version>
     <packaging>pom</packaging>
     <url>http://switchfly.com</url>
-    <name>Master</name>
+    <name>Switchfly Parent Project</name>
     <description>Parent Project Configuration</description>
 
     <organization>
@@ -32,6 +32,7 @@
 
     <modules>
         <module>compress</module>
+        <module>inputvalidation</module>
     </modules>
 
     <properties>
@@ -70,28 +71,6 @@
             </dependency>
 
             <!--
-            - Guice
-            -->
-
-            <dependency>
-                <groupId>com.google.code.findbugs</groupId>
-                <artifactId>jsr305</artifactId>
-                <version>2.0.0</version>
-            </dependency>
-
-            <dependency>
-                <groupId>com.google.inject</groupId>
-                <artifactId>guice</artifactId>
-                <version>3.0</version>
-            </dependency>
-
-            <dependency>
-                <groupId>com.google.inject.extensions</groupId>
-                <artifactId>guice-multibindings</artifactId>
-                <version>3.0</version>
-            </dependency>
-
-            <!--
             - Logging
             -->
 
@@ -117,9 +96,78 @@
                 <version>1.4</version>
             </dependency>
 
+            <dependency>
+                <groupId>commons-collections</groupId>
+                <artifactId>commons-collections</artifactId>
+                <version>3.2</version>
+            </dependency>
+
+            <!-- needed by commons-validator -->
+            <dependency>
+                <groupId>oro</groupId>
+                <artifactId>oro</artifactId>
+                <version>2.0.8</version>
+            </dependency>
+
+            <dependency>
+                <groupId>commons-validator</groupId>
+                <artifactId>commons-validator</artifactId>
+                <version>1.3.1</version>
+            </dependency>
+
+            <dependency>
+                <groupId>org.apache.httpcomponents</groupId>
+                <artifactId>httpclient</artifactId>
+                <version>4.1.3</version>
+            </dependency>
+
             <!--
-              - HTML, JS, CSS
-              -->
+            - Google
+            -->
+
+            <dependency>
+                <groupId>com.google.code.findbugs</groupId>
+                <artifactId>jsr305</artifactId>
+                <version>2.0.0</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.google.inject</groupId>
+                <artifactId>guice</artifactId>
+                <version>3.0</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.google.inject.extensions</groupId>
+                <artifactId>guice-multibindings</artifactId>
+                <version>3.0</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.google.guava</groupId>
+                <artifactId>guava</artifactId>
+                <version>13.0</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.google.sitebricks</groupId>
+                <artifactId>sitebricks</artifactId>
+                <version>0.8.6-SNAPSHOT</version>
+                <exclusions>
+                    <exclusion>
+                        <groupId>javax.servlet</groupId>
+                        <artifactId>servlet-api</artifactId>
+                    </exclusion>
+                    <exclusion>
+                        <groupId>com.google.guava</groupId>
+                        <artifactId>guava</artifactId>
+                    </exclusion>
+                </exclusions>
+            </dependency>
+
+            <!--
+            - HTML, JS, CSS
+            -->
 
             <dependency>
                 <groupId>org.jsoup</groupId>

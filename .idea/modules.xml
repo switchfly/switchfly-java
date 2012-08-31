@@ -4,6 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/switchfly.iml" filepath="$PROJECT_DIR$/switchfly.iml" />
       <module fileurl="file://$PROJECT_DIR$/compress/switchfly-compress.iml" filepath="$PROJECT_DIR$/compress/switchfly-compress.iml" />
+      <module fileurl="file://$PROJECT_DIR$/inputvalidation/switchfly-inputvalidation.iml" filepath="$PROJECT_DIR$/inputvalidation/switchfly-inputvalidation.iml" />
     </modules>
   </component>
 </project>

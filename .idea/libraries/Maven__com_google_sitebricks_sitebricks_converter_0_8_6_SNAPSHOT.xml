@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: com.google.sitebricks:sitebricks-converter:0.8.6-SNAPSHOT">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/com/google/sitebricks/sitebricks-converter/0.8.6-SNAPSHOT/sitebricks-converter-0.8.6-SNAPSHOT.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$MAVEN_REPOSITORY$/com/google/sitebricks/sitebricks-converter/0.8.6-SNAPSHOT/sitebricks-converter-0.8.6-SNAPSHOT-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$MAVEN_REPOSITORY$/com/google/sitebricks/sitebricks-converter/0.8.6-SNAPSHOT/sitebricks-converter-0.8.6-SNAPSHOT-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
