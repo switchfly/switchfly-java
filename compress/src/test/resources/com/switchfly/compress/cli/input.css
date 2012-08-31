@@ -1,0 +1,40 @@
+#C1 {
+    overflow: visible;
+    z-index: 100;
+    position: relative;
+}
+
+.toggle_off {
+    background: transparent url('/images/filter_arrow_right.gif') center left no-repeat;
+    padding-left: 17px;
+}
+
+.hiddenBlock {
+    display: none !important;
+}
+
+/* price for air cards */
+.airOption .priceContainer {
+    border: 1px solid #ccc;
+    padding: 3px;
+}
+
+/* TEST: Comment and opening brace on same line. */
+.some  #selector /*comment here*/
+{
+    width: 100px;
+    height: 100%;
+}
+
+/* TEST: Newline following a slash */
+.some  #selector {
+    width: 100px;
+    /*height:100%;*/
+}
+
+.autoCompleteDiv {
+    position: absolute;
+    text-align: left;
+    width: 25em;
+    background: #DDEEFF none repeat scroll 0 0;
+}

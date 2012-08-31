@@ -1,0 +1,35 @@
+#C1 {
+    overflow: visible;
+    z-index: 100;
+    position: relative
+}
+
+.toggle_off {
+    background: transparent url('/images/filter_arrow_right.gif') center left no-repeat;
+    padding-left: 17px
+}
+
+.hiddenBlock {
+    display: none !important
+}
+
+.airOption .priceContainer {
+    border: 1px solid #ccc;
+    padding: 3px
+}
+
+.some #selector {
+    width: 100px;
+    height: 100%
+}
+
+.some #selector {
+    width: 100px
+}
+
+.autoCompleteDiv {
+    position: absolute;
+    text-align: left;
+    width: 25em;
+    background: #def none repeat scroll 0 0
+}

@@ -1,0 +1,1551 @@
+#C1 {
+    overflow: visible;
+    z-index: 100;
+    position: relative;
+}
+
+#C2 {
+    z-index: 10;
+    position: relative;
+}
+
+.toggle_off {
+    background: transparent url('/images/filter_arrow_right.gif') center left no-repeat;
+    padding-left: 17px;
+}
+
+.toggle_on {
+    background: transparent url('/images/filter_arrow_down.gif') center left no-repeat;
+    padding-left: 17px;
+}
+
+.hiddenBlock {
+    display: none !important;
+}
+
+.matrixContainer {
+    clear: both;
+}
+
+.autoCompleteDiv {
+    position: absolute;
+    text-align: left;
+    width: 25em;
+    background: #DDEEFF none repeat scroll 0 0;
+}
+
+.priceLink {
+    cursor: pointer;
+    padding: 3px 0 0;
+    clear: both;
+}
+
+/* price for air cards */
+.airOption .priceContainer {
+    border: 1px solid #ccc;
+    padding: 3px;
+}
+
+.card_price {
+    border: 1px solid #eee;
+    text-align: left;
+}
+
+.card_price .label {
+    padding: 0;
+    margin-right: 5px;
+}
+
+.airOption .cashAvgPrice {
+    font-size: 16px;
+}
+
+.card_price p {
+    margin: 5px 5px 2px 5px;
+}
+
+.priceContainer .card_price .price,
+.roomTypes .price_or_points {
+    font-weight: bold;
+}
+
+.priceDetails {
+    margin: 0 5px 5px;
+}
+
+/* NEW MODIFY SEARCH (9.1) START */
+
+#modifySearch {
+    background: #eee;
+    border: 1px solid #999;
+    padding: 5px;
+    margin-bottom: 5px;
+    overflow: visible;
+    cursor: pointer;
+    height: auto;
+}
+
+.modifySearchToggle {
+    background: transparent url('/images/filter_arrow_right.gif') center left no-repeat;
+    padding-left: 17px;
+}
+
+.modifySearchToggle a {
+    font-weight: bold;
+
+}
+
+.modifySearchBody {
+    overflow: visible;
+    background: #fff;
+    border: 5px solid #ccc;
+    padding: 5px 10px 10px;
+    width: 400px;
+    z-index: 9000;
+    display: none;
+    position: absolute;
+}
+
+.modifySearchHeader {
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 15px;
+    overflow: hidden;
+    height: 15px;
+    vertical-align: bottom;
+    float: left;
+    margin-bottom: 5px;
+}
+
+.modifySearchClose {
+    float: right;
+}
+
+#modifySearch #date_label1,
+#modifySearch #date_label2 {
+    font-weight: bold;
+}
+
+.modifySearchBody .subHeader {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.modifySearchBody .subHeader .changeSearch {
+    font-weight: normal;
+}
+
+#modifySearchForm .searchSummary {
+    border-top: 1px dotted #999;
+    padding-top: 5px;
+}
+
+.modifySearchBody .left {
+    width: 35%;
+    display: block;
+    float: left;
+    clear: right;
+}
+
+#modifySearchForm .searchSummary .left {
+    text-align: right;
+    width: 32%;
+    margin-right: 2%;
+}
+
+.modifySearchBody .right {
+    width: 65%;
+    display: block;
+    float: right;
+}
+
+.modifySearchCriteria .left,
+.modifySearchCriteria .right {
+    width: 50%;
+}
+
+.modifySearchRow.last {
+    margin: 10px 0 0 0;
+    text-align: right;
+}
+
+.modifySearchRow img {
+    vertical-align: middle;
+    margin: 0 3px;
+}
+
+.modifySearchRow label {
+    display: block;
+    vertical-align: middle;
+}
+
+.modifySearchRow .nonstop {
+    display: inline;
+}
+
+.modifySearchRow .inline {
+    float: left;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+.modifySearchBody .searchSummary {
+    border-bottom: 1px dotted #999;
+    padding-bottom: 5px;
+    margin-bottom: 5px;
+}
+
+.modifySearchRow .submit {
+    float: right;
+    margin-right: 5px;
+}
+
+.areaSearchRowDropdown {
+    width: 170px;
+}
+
+/* *** auto complete - START ** */
+.modify_search_autocomplete_results .yui-ac {
+    font-size: 100%;
+    position: relative;
+}
+
+.modify_search_autocomplete_results .yui-ac-input {
+    width: 150px;
+    position: relative;
+    display: block;
+}
+
+.modify_search_autocomplete_results.yui-ac-container {
+    position: static !important;
+    top: 1.6em;
+    width: 155px;
+}
+
+.modify_search_autocomplete_results .yui-ac-content {
+    background: #eee;
+    border: 1px solid #999;
+    overflow: visible;
+    position: absolute;
+    width: 155px;
+    z-index: 9050;
+}
+
+.modify_search_autocomplete_results .yui-ac-shadow {
+    -moz-opacity: 0.4px;
+    background: #000;
+    filter: alpha(opacity = 40);
+    margin: .3em;
+    opacity: .40;
+    position: absolute;
+    width: 155px;
+    z-index: 9049;
+}
+
+.modify_search_autocomplete_results .yui-ac-content ul {
+    margin: 0;
+    padding: 0;
+    width: 155px;
+    background: #eee;
+}
+
+.modify_search_autocomplete_results .yui-ac-content li {
+    cursor: default;
+    margin: 0;
+    padding: 2px 5px;
+    white-space: nowrap;
+}
+
+.modify_search_autocomplete_results .yui-ac-content li.yui-ac-prehighlight {
+    background: #def;
+}
+
+.modify_search_autocomplete_results .yui-ac-content li.yui-ac-highlight {
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+/* Addresses IE destination input bleed through on departure autocomplete list */
+#air_area_search1_auto_complete,
+#area_search1_auto_complete {
+    z-index: 9051;
+}
+
+.modify_search_autocomplete_results .yui-ac-content ul,
+.modify_search_autocomplete_results .yui-ac-content {
+    width: 450px !important;
+}
+
+#filterByFlightNumber {
+    float: left;
+}
+
+/* *** auto complete - END ** */
+
+/* NEW MODIFY SEARCH (9.1) END */
+
+#filtersContainer {
+    z-index: 100;
+    position: relative;
+}
+
+.filterContainer {
+    border: 1px solid #999;
+    padding: 5px;
+    margin-bottom: 5px;
+    background: #fff;
+    position: relative;
+}
+
+.filterContainer .filterContainer {
+    border: 1px dotted #ccc;
+}
+
+.filterContainer ul {
+    margin-bottom: 0;
+}
+
+#filtersContainer .label {
+    font-weight: normal;
+}
+
+.filterHeader {
+    font-weight: bold;
+    font-size: 14px;
+    margin-bottom: 5px;
+    line-height: 15px;
+    overflow: hidden;
+    height: 15px;
+    vertical-align: bottom;
+}
+
+.filterContainer .showAllResults {
+    font-weight: normal;
+    font-size: 11px;
+    text-align: right;
+    vertical-align: bottom;
+}
+
+.filterContainer li input {
+    margin-right: 3px;
+}
+
+.filterSubHeader {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 3px;
+    font-size: 11px;
+    background: #eee url('/images/filter_arrow_right.gif') center left no-repeat;
+    background-position: 2px 4px;
+    padding: 2px 2px 2px 17px;
+    cursor: pointer;
+}
+
+.filterContainer form {
+    display: none;
+}
+
+.filterContainer .active form,
+#filterStops form,
+#filterAirlines form,
+form.filterFormAirportsDepart,
+form.filterFormAirportsArrive,
+#filterPriceContainer form {
+    display: block;
+}
+
+.filterContainer .active .filterSubHeader {
+    background: #eee url('/images/filter_arrow_down.gif') center left no-repeat;
+    text-decoration: underline;
+}
+
+.filterContainer .active .filterSubHeader:hover {
+    text-decoration: none;
+}
+
+.filterSubHeader2 {
+    font-weight: bold;
+    margin-bottom: 3px;
+    font-size: 10px;
+}
+
+.filterLegTimes,
+#filterAirportsairJourney,
+#filterAirportsairJourney,
+#filterDurationItin,
+#filterDurationLayovers {
+    margin-top: 5px;
+    border-top: 1px dashed #999;
+    margin: 5px;
+    padding-top: 5px;
+}
+
+.flightTimesToggles {
+    padding-bottom: 5px;
+    padding-left: 10px;
+}
+
+/* hide show all for sliders in times filters*/
+#filterTimesLandingReturn .showAllResults,
+#filterTimesOutboundReturn .showAllResults,
+#filterTimesLandingDeparture .showAllResults,
+#filterTimesOutboundDeparture .showAllResults {
+    display: none;
+}
+
+#filterFormAirlines .label {
+    text-decoration: underline;
+    cursor: pointer;
+    color: #06F;
+}
+
+#filterFormAirlines .label:hover {
+    text-decoration: none;
+}
+
+.malibu_choose_hotel_header {
+    margin-top: 0;
+}
+
+#activeAgent {
+    height: 100%;
+    overflow: hidden !important;
+    margin-bottom: 4px;
+}
+
+#activeAgent img,
+#activeAgent div {
+    display: inline;
+    margin: 0;
+    padding: 0;
+    line-height: 24px;
+    height: 24px;
+    vertical-align: middle;
+}
+
+#airMatrix {
+    border: 1px solid #999;
+    background: #eee;
+    padding: 10px;
+    margin: 5px 0;
+}
+
+.matrixHeader {
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.matrixSummary p,
+.matrixSummary div {
+    width: 45%;
+    display: block;
+    float: left;
+    margin: 0 0 5px 0;
+}
+
+.matrixSummary div {
+    text-align: right;
+    float: right;
+}
+
+.matrixPagination {
+    text-align: right;
+}
+
+.matrixPagination a {
+    margin: 0px 5px;
+}
+
+#airMatrix table {
+    float: left;
+    margin: 0;
+    height: 175px;
+    border-style: none;
+}
+
+#airMatrix tr {
+    height: 40px;
+}
+
+#airMatrix td {
+    border: 1px solid #ccc;
+    border-collapse: separate;
+    padding: 0 5px;
+    height: 40px;
+    width: 100px;
+    font-size: 11px;
+    text-align: center;
+    background: #fff;
+}
+
+#airMatrix img {
+    margin: 3px;
+}
+
+#airMatrix .matrixCol0,
+#airMatrix .matrixRow1 {
+    padding: 5px;
+}
+
+#airMatrix .matrixCol0 {
+    background: #eee;
+    border-color: #eee;
+    border-right: 1px solid #ccc;
+    border-collapse: collapse;
+    text-align: right;
+    padding-right: 15px;
+    width: 70px;
+}
+
+#airMatrix .matrixRow1 {
+    vertical-align: top;
+    height: 70px;
+}
+
+#airMatrix td:hover {
+    background: #def;
+}
+
+#airMatrix .matrixCol0:hover {
+    background: #eee;
+}
+
+#airMatrix .matrixRow1:hover {
+    background: #fff;
+}
+
+#filterResultsSummary .left-child,
+#filterResultsSummary .right-child {
+    margin-left: 0;
+    margin-right: 0;
+    display: block;
+    float: left;
+}
+
+#filterResultsSummary .right-child {
+    float: right;
+}
+
+#optionsContainer {
+    padding: 0;
+    border-top: 0;
+}
+
+#flightNumberSearch {
+    margin-bottom: 5px;
+    background: #eee;
+    padding: 2px 5px;
+    border: 1px solid #999;
+    line-height: 26px;
+}
+
+#flightNumberSearch .label {
+    float: left;
+    margin-right: 5px;
+}
+
+#flightNumberSearch .yui-ac-content,
+#flightNumberSearch .yui-ac-content ul {
+    width: 128px !important;
+}
+
+#flightNumberSearch li {
+    line-height: 16px;
+}
+
+#paginationSummary {
+    background: #eee;
+    padding: 5px;
+    text-align: right;
+    border: 1px solid #999;
+    border-bottom: none;
+}
+
+a.pageActive,
+a.pageActive:hover,
+a.pageActive:focus,
+a.pageActive:active,
+a.pageActive:visited,
+a.pageLinkDisabled,
+a.pageLinkDisabled:hover,
+a.pageLinkDisabled:focus,
+a.pageLinkDisabled:active,
+a.pageLinkDisabled:visited {
+    cursor: default;
+    text-decoration: none;
+    color: #000000;
+}
+
+.showAllResults {
+    margin-left: 5px;
+}
+
+#paginationSummary div {
+    display: inline;
+}
+
+#paginationSummary .numResults {
+    float: left;
+}
+
+#optionsSorting {
+    padding-bottom: 0;
+    background: #eee;
+    padding: 5px;
+    border: 1px solid #999;
+    border-top: 1px dotted #999;
+}
+
+.paginationContainer span,
+.paginationContainer a {
+    margin-right: 5px;
+}
+
+.paginationContainer .label {
+    margin-left: 20px;
+}
+
+#optionsSorting div {
+    float: left;
+}
+
+.sortAirline {
+    width: 169px;
+}
+
+.sortFlight {
+    width: 250px;
+}
+
+.sortDepart {
+    width: 62px;
+}
+
+.sortArrive {
+    width: 58px;
+}
+
+.sortDuration {
+    width: 135px;
+}
+
+.option, .airOption {
+    border: 1px solid #999;
+    background: #fff;
+    margin: 10px 0;
+}
+
+.label,
+.airline {
+    font-weight: bold;
+}
+
+.noResults {
+    text-align: center;
+    font-weight: bold;
+    font-size: 16px;
+    padding: 5px;
+    background: lightyellow;
+    border-color: orange;
+}
+
+/* Left */
+.airOption .left {
+    float: left;
+    width: 615px;
+}
+
+.airLeg {
+    height: 100%;
+    background: #fff;
+    border-bottom: 1px solid #ccc;
+    overflow: hidden;
+}
+
+.airSegment {
+    padding: 5px 0;
+    overflow: hidden;
+}
+
+.optionDetails .airSegment {
+    background: #fff;
+    padding-bottom: 0;
+    border: 1px solid #ccc;
+    border-bottom: 0;
+}
+
+.optionDetails .airlineInfo {
+    width: 116px;
+}
+
+.airSegment div {
+    float: left;
+    padding: 0 5px 5px 5px;
+}
+
+.airlineInfo .codeshare {
+    padding: 3px 0 0;
+    font-size: 9px;
+}
+
+.segmentAbout,
+.optionDetails .segmentAbout {
+    float: none;
+    clear: both;
+    padding: 2px 5px;
+    border-top: 1px dashed #ccc;
+    font-size: 10px;
+    background: #fff;
+}
+
+.segmentMessage,
+.optionDetails .segmentMessage {
+    float: none;
+    clear: both;
+    padding: 2px 5px;
+    border-top: 1px dashed #ccc;
+    font-size: 10px;
+    background: #fff;
+}
+
+.dateMessage,
+.optionDetails .dateMessage {
+    background: lightyellow;
+}
+
+.dateMessageArrive {
+    color: red;
+}
+
+.optionDetails .connection,
+.connection .label {
+    font-weight: normal;
+}
+
+.connection .layover_airportName,
+.connection .layover_airportCode,
+.connection .layover_time {
+    font-weight: bold;
+}
+
+.airlineInfo {
+    width: 120px;
+}
+
+.logo,
+.flightNumber {
+    width: 30px;
+}
+
+.airportInfo {
+    width: 200px;
+}
+
+.airSegment .time {
+    width: 50px;
+}
+
+.duration {
+    width: 55px;
+}
+
+.optionDetails .time,
+.optionDetails .duration {
+    float: none;
+    width: 120px;
+    padding-bottom: 0;
+}
+
+.airOption p {
+    margin: 0px;
+}
+
+.toggle {
+    padding: 2px 5px;
+    background: #eee;
+    border-right: 1px solid #ccc;
+}
+
+.optionDetails {
+    background: #eee;
+    padding: 5px 20px;
+    border-right: 1px solid #ccc;
+}
+
+p.detailsHeader {
+    font-weight: bold;
+    font-size: 12px;
+    margin: 5px 0;
+}
+
+p.detailsHeader .airLegDeparting {
+    font-weight: normal;
+}
+
+.optionDetails .airLeg {
+    background: transparent;
+}
+
+.airSegment table {
+    float: left;
+    padding: 5px;
+    margin-top: 1px;
+    width: 365px;
+}
+
+.airSegment table td {
+    border: none;
+    padding: 0;
+}
+
+.airSegment table .label {
+    padding-left: 5px;
+    padding-right: 10px;
+    text-align: left;
+    width: 55px;
+}
+
+.optionDetails .airSegment table .label {
+    width: 70px;
+}
+
+.optionDetails .airSegment table {
+    margin-top: 0;
+    margin-bottom: 5px;
+}
+
+.airOption .debugging {
+    background: #def;
+    padding: 5px;
+    float: left;
+    border-top: 1px dotted #ccc;
+}
+
+.airOption .debugging textarea {
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    width: 98%;
+}
+
+/* Right */
+.airOption .right {
+    float: right;
+    width: 165px;
+    overflow: hidden;
+}
+
+.airOption .totalPrices .label {
+    width: 66%;
+    margin-right: 3px;
+}
+
+.priceContainer {
+    border: 1px solid #999;
+    text-align: center;
+    margin: 3px;
+    background: #eee;
+    padding: 3px 0;
+}
+
+.priceContainer p {
+    padding: 5px;
+}
+
+.price {
+    font-weight: bold;
+}
+
+.price .pricePerUnit {
+    font-size: 16px;
+}
+
+.price .priceDetails,
+.price .cashTotal,
+.price .priceLabel {
+    font-weight: normal;
+}
+
+.price .redemptionTotal {
+    padding: 3;
+    border: 1px dotted #ccc;
+    line-height: 11px;
+}
+
+.priceContainer a,
+.price .cashTotal,
+.price .redemptionTotalPrice,
+.price .redemptionShortfall,
+.price .priceLabel,
+.price .priceDetails,
+.price .currencyCode {
+    font-size: 10px;
+    line-height: 10px;
+}
+
+.airOption .crs {
+    text-align: center;
+    font-size: 9px;
+    line-height: 9px;
+    padding: 2px 0;
+}
+
+#searchSummary {
+    background: #eee;
+    margin-bottom: 5px;
+    padding: 5px;
+    border: 1px solid #999;
+}
+
+.searchSummaryTop,
+.searchSummaryPassengers,
+.searchSummaryCriteria {
+    margin-bottom: 5px;
+}
+
+#searchSummary .left,
+#searchSummary .right {
+    float: left;
+}
+
+#searchSummary .left {
+    width: 200px;
+    text-align: right;
+    margin-right: 10px;
+}
+
+.searchSummaryTop .label {
+    font-size: 16px;
+}
+
+.searchSummaryTimes {
+    margin-bottom: 0;
+}
+
+#searchSummary .origin {
+    padding-top: 5px;
+}
+
+#optionsFooter {
+    background: #eee;
+    padding: 5px;
+    text-align: right;
+    border: 1px solid #999;
+}
+
+/* Waiting overlay */
+
+#wait_c #wait {
+    background: transparent url(/images/yui-overlay-wait-bg.gif) top left no-repeat;
+}
+
+.map_active .malibu_hotel_avail_summary h3 .hotel_number {
+    background: url(/images/gmap_marker_default.png) top left no-repeat;
+}
+
+/* Below targets IE6 to apply .jpg instead of .png */
+
+* html .map_active .malibu_hotel_avail_summary h3 .hotel_number {
+    background: url(/images/gmap_marker_default.jpg) top left no-repeat;
+}
+
+/* Hotel Filters - Price Slider */
+
+#price_filter_slider {
+    background: url(/images/dual_thumb_bg.gif) top left no-repeat;
+}
+
+#price_filter_highlight {
+    background: url(/images/dual_thumb_highlight.gif) top left repeat-x;
+}
+
+#price_filter_minthumb,
+#price_filter_maxthumb {
+    background: url(/images/r-thumb-round.gif) top center no-repeat;
+}
+
+/* Hotel Filters - Amenity Icons */
+
+#amenities_filter_all_inclusive,
+.amenities_filter_all_inclusive {
+    background: url(/images/allInclusive_neg.png) top left no-repeat;
+}
+
+#amenities_filter_continental_meal_plan,
+.amenities_filter_continental_meal_plan {
+    background: url(/images/mealPlan_neg.png) top left no-repeat;
+}
+
+#amenities_filter_bar_lounge_onsite,
+.amenities_filter_bar_lounge_onsite {
+    background: url(/images/bar_neg.png) top left no-repeat;
+}
+
+#amenities_filter_restaurant_onsite,
+.amenities_filter_restaurant_onsite {
+    background: url(/images/restaurant_neg.png) top left no-repeat;
+}
+
+#amenities_filter_room_service,
+.amenities_filter_room_service {
+    background: url(/images/roomService_neg.png) top left no-repeat;
+}
+
+#amenities_filter_internet,
+.amenities_filter_internet {
+    background: url(/images/internet_neg.png) top left no-repeat;
+}
+
+#amenities_filter_pets_allowed,
+.amenities_filter_pets_allowed {
+    background: url(/images/pets_neg.png) top left no-repeat;
+}
+
+#amenities_filter_free_parking,
+.amenities_filter_free_parking {
+    background: url(/images/parking_neg.png) top left no-repeat;
+}
+
+#amenities_filter_business_center,
+.amenities_filter_business_center {
+    background: url(/images/businessCenter_neg.png) top left no-repeat;
+}
+
+#amenities_filter_golf,
+.amenities_filter_golf {
+    background: url(/images/golf_neg.png) top left no-repeat;
+}
+
+#amenities_filter_gym,
+.amenities_filter_gym {
+    background: url(/images/gym_neg.png) top left no-repeat;
+}
+
+#amenities_filter_spa,
+.amenities_filter_spa {
+    background: url(/images/spa_neg.png) top left no-repeat;
+}
+
+#amenities_filter_swimming_pool,
+.amenities_filter_swimming_pool {
+    background: url(/images/pool_neg.png) top left no-repeat;
+}
+
+#amenities_filter_meeting_rooms,
+.amenities_filter_meeting_rooms {
+    background: url(/images/meetingRooms_neg.png) top left no-repeat;
+}
+
+/* Hotel Filters - Amenity Icons (lte IE 7)
+	The following specifically targets IE6 (and earlier) to use .jpg instead of .png
+*/
+
+* html #amenities_filter_all_inclusive {
+    background: url(/images/allInclusive.jpg) top left no-repeat;
+}
+
+* html #amenities_filter_all_inclusive.li_hover {
+    background: url(/images/allInclusive_hover.jpg) top left no-repeat;
+}
+
+* html .malibu_hotel_avail_summary .amenities_filter_all_inclusive {
+    background: url(/images/allInclusive_hover.jpg) top left no-repeat;
+}
+
+/* ------------------------------------- */
+
+* html #amenities_filter_continental_meal_plan {
+    background: url(/images/mealPlan.jpg) top left no-repeat;
+}
+
+* html #amenities_filter_continental_meal_plan.li_hover {
+    background: url(/images/mealPlan_hover.jpg) top left no-repeat;
+}
+
+* html .malibu_hotel_avail_summary .amenities_filter_continental_meal_plan {
+    background: url(/images/mealPlan_hover.jpg) top left no-repeat;
+}
+
+/* ------------------------------------- */
+
+* html #amenities_filter_bar_lounge_onsite {
+    background: url(/images/bar.jpg) top left no-repeat;
+}
+
+* html #amenities_filter_bar_lounge_onsite.li_hover {
+    background: url(/images/bar_hover.jpg) top left no-repeat;
+}
+
+* html .malibu_hotel_avail_summary .amenities_filter_bar_lounge_onsite {
+    background: url(/images/bar_hover.jpg) top left no-repeat;
+}
+
+/* ------------------------------------- */
+
+* html #amenities_filter_restaurant_onsite {
+    background: url(/images/restaurant.jpg) top left no-repeat;
+}
+
+* html #amenities_filter_restaurant_onsite.li_hover {
+    background: url(/images/restaurant_hover.jpg) top left no-repeat;
+}
+
+* html .malibu_hotel_avail_summary .amenities_filter_restaurant_onsite {
+    background: url(/images/restaurant_hover.jpg) top left no-repeat;
+}
+
+/* ------------------------------------- */
+
+* html #amenities_filter_room_service {
+    background: url(/images/roomService.jpg) top left no-repeat;
+}
+
+* html #amenities_filter_room_service.li_hover {
+    background: url(/images/roomService_hover.jpg) top left no-repeat;
+}
+
+* html .malibu_hotel_avail_summary .amenities_filter_room_service {
+    background: url(/images/roomService_hover.jpg) top left no-repeat;
+}
+
+/* ------------------------------------- */
+
+* html #amenities_filter_internet {
+    background: url(/images/internet.jpg) top left no-repeat;
+}
+
+* html #amenities_filter_internet.li_hover {
+    background: url(/images/internet_hover.jpg) top left no-repeat;
+}
+
+* html .malibu_hotel_avail_summary .amenities_filter_internet {
+    background: url(/images/internet_hover.jpg) top left no-repeat;
+}
+
+/* ------------------------------------- */
+
+* html #amenities_filter_pets_allowed {
+    background: url(/images/pets.jpg) top left no-repeat;
+}
+
+* html #amenities_filter_pets_allowed.li_hover {
+    background: url(/images/pets_hover.jpg) top left no-repeat;
+}
+
+* html .malibu_hotel_avail_summary .amenities_filter_pets_allowed {
+    background: url(/images/pets_hover.jpg) top left no-repeat;
+}
+
+/* ------------------------------------- */
+
+* html #amenities_filter_free_parking {
+    background: url(/images/parking.jpg) top left no-repeat;
+}
+
+* html #amenities_filter_free_parking.li_hover {
+    background: url(/images/parking_hover.jpg) top left no-repeat;
+}
+
+* html .malibu_hotel_avail_summary .amenities_filter_free_parking {
+    background: url(/images/parking_hover.jpg) top left no-repeat;
+}
+
+/* ------------------------------------- */
+
+* html #amenities_filter_business_center {
+    background: url(/images/businessCenter.jpg) top left no-repeat;
+}
+
+* html #amenities_filter_business_center.li_hover {
+    background: url(/images/businessCenter_hover.jpg) top left no-repeat;
+}
+
+* html .malibu_hotel_avail_summary .amenities_filter_business_center {
+    background: url(/images/businessCenter_hover.jpg) top left no-repeat;
+}
+
+/* ------------------------------------- */
+
+* html #amenities_filter_golf {
+    background: url(/images/golf.jpg) top left no-repeat;
+}
+
+* html #amenities_filter_golf.li_hover {
+    background: url(/images/golf_hover.jpg) top left no-repeat;
+}
+
+* html .malibu_hotel_avail_summary .amenities_filter_golf {
+    background: url(/images/golf_hover.jpg) top left no-repeat;
+}
+
+/* ------------------------------------- */
+
+* html #amenities_filter_gym {
+    background: url(/images/gym.jpg) top left no-repeat;
+}
+
+* html #amenities_filter_gym.li_hover {
+    background: url(/images/gym_hover.jpg) top left no-repeat;
+}
+
+* html .malibu_hotel_avail_summary .amenities_filter_gym {
+    background: url(/images/gym_hover.jpg) top left no-repeat;
+}
+
+/* ------------------------------------- */
+
+* html #amenities_filter_spa {
+    background: url(/images/spa.jpg) top left no-repeat;
+}
+
+* html #amenities_filter_spa.li_hover {
+    background: url(/images/spa_hover.jpg) top left no-repeat;
+}
+
+* html .malibu_hotel_avail_summary .amenities_filter_spa {
+    background: url(/images/spa_hover.jpg) top left no-repeat;
+}
+
+/* ------------------------------------- */
+
+* html #amenities_filter_swimming_pool {
+    background: url(/images/pool.jpg) top left no-repeat;
+}
+
+* html #amenities_filter_swimming_pool.li_hover {
+    background: url(/images/pool_hover.jpg) top left no-repeat;
+}
+
+* html .malibu_hotel_avail_summary .amenities_filter_swimming_pool {
+    background: url(/images/pool_hover.jpg) top left no-repeat;
+}
+
+/* ------------------------------------- */
+
+* html #amenities_filter_meeting_rooms {
+    background: url(/images/meetingRooms.jpg) top left no-repeat;
+}
+
+* html #amenities_filter_meeting_rooms.li_hover {
+    background: url(/images/meetingRooms_hover.jpg) top left no-repeat;
+}
+
+* html .malibu_hotel_avail_summary .amenities_filter_meeting_rooms {
+    background: url(/images/meetingRooms_hover.jpg) top left no-repeat;
+}
+
+#hotel_results .yui-ac-content .yui-ac-bd .yui-ac-highlight {
+    background: url(/images/pointer_htl.png) top left no-repeat;
+}
+
+/* Hotel Styling */
+
+.malibu_hotel_stay_summary {
+    margin: 10px 0;
+}
+
+#hotels_view_nav,
+#hotels_view_nav li {
+    overflow: hidden;
+}
+
+#hotels_view_nav {
+    display: block;
+    margin: 5px 0 0 0;
+    padding: 0;
+    position: relative;
+    top: 1px;
+    width: 100%;
+}
+
+#hotels_view_nav li {
+    list-style: none;
+    float: left;
+    padding: 0;
+    margin: 0 2px 0 0;
+    position: relative;
+}
+
+#hotels_view_nav h3.malibu_hotel_header {
+    top: 0;
+    display: block;
+    margin: 0pt;
+}
+
+#hotels_view_nav li a {
+    display: block;
+    padding-right: 0;
+    padding: 5px;
+    height: 16px;
+    width: 110px;
+    border: 1px solid #999;
+    text-decoration: none;
+    background: #eee;
+    color: #000;
+}
+
+#hotels_view_nav li a:hover {
+    text-decoration: none;
+    background: #def;
+}
+
+#hotels_view_nav li a.active_tab {
+    background: #fff;
+    height: 17px;
+    border-bottom: none;
+    color: #000;
+}
+
+#hotels_view_nav li a.active_tab:hover {
+    cursor: default;
+}
+
+#hotel_avail_container {
+    border: 1px solid #999;
+    padding: 5px;
+}
+
+#hotel_pager_container {
+    width: 100%;
+    padding: 5px 3px;
+}
+
+.hotel_filters_results,
+#hotel_pager_container .arc_pager {
+    float: left;
+}
+
+#hotel_pager_container .arc_pager {
+    float: right;
+    padding-right: 5px;
+}
+
+.arc_pager a.inactive {
+    color: #000;
+    text-decoration: none;
+    cursor: default;
+}
+
+.malibu_hotel_avail_header {
+    background: #eee;
+    border: 1px solid #999;
+    padding: 5px;
+}
+
+.malibu_hotel_avail_header .avail_sort {
+    float: left;
+}
+
+#hotel_search_bar {
+    float: right;
+}
+
+.malibu_hotel_avail_header label,
+.malibu_hotel_avail_header select,
+.malibu_hotel_avail_header input {
+    line-height: 18px;
+}
+
+.malibu_hotel_avail_header label {
+    text-align: right;
+    padding-right: 3px;
+}
+
+#hotel_filter {
+    width: 170px;
+}
+
+.malibu_hotel_avail {
+    border: 1px solid #999;
+    margin: 10px 0 0;
+}
+
+.malibu_avail_price_header,
+.malibu_hotel_avail_footer {
+    background: #def;
+    padding: 5px 10px;
+    text-align: right;
+}
+
+.malibu_avail_price_header ul {
+    float: left;
+    margin: 0;
+}
+
+.malibu_avail_price_header li {
+    display: inline;
+}
+
+.malibu_avail_price_header .package_price {
+    float: right;
+}
+
+.malibu_price,
+.malibu_total_price {
+    font-weight: bold;
+    font-size: 130%;
+}
+
+.yui-ac-content .malibu_price {
+    font-size: inherit;
+}
+
+.malibu_hotel_avail_summary {
+    border-top: 1px dotted #999;
+    border-bottom: 1px dotted #999;
+    padding: 10px;
+}
+
+.malibu_hotel_avail_summary p {
+    margin: 0;
+}
+
+.hotel_name_container {
+    margin: 0;
+}
+
+#hotels_list_view .hotel_number {
+    display: none;
+}
+
+#hotels_list_view.map_active .hotel_number {
+    display: block;
+    float: left;
+    text-align: center;
+    color: #000;
+    font-size: 11px;
+    margin-right: 5px;
+    height: 34px;
+    line-height: 20px;
+    width: 20px;
+    letter-spacing: -.12em;
+}
+
+#hotel_avail_container .star-rating-large {
+    float: left;
+}
+
+#hotels_map_view {
+    border: 1px solid #999;
+    float: none;
+    clear: both;
+}
+
+#hotels_map_view,
+.hotel_map_canvas {
+    height: 400px;
+    width: 771px;
+}
+
+/* Itinerary Components */
+
+#itineraryComponents {
+    border: 1px solid #999;
+    margin: 10px 0;
+}
+
+#itineraryComponents .avail_header,
+#itineraryComponents .avail_sub_header {
+    background: #ccc;
+    padding: 5px;
+    font-weight: bold;
+}
+
+#itineraryComponents .avail_sub_header {
+    background: #eee;
+    border-top: 1px dotted #999;
+    border-bottom: 1px dotted #999;
+}
+
+#itineraryComponents .avail_details {
+    padding: 5px;
+}
+
+#itineraryComponents .air_details {
+    width: 100%;
+}
+
+#itineraryComponents .air_details .labels {
+    width: 40px;
+    text-align: right;
+    padding-right: 5px;
+}
+
+#itineraryComponents .air_details .flight_number {
+}
+
+#itineraryComponents .avail_footer {
+    padding: 0 5px 5px;
+}
+
+#itineraryComponents .avail_footer span {
+    float: left;
+}
+
+#itineraryComponents .avail_footer a {
+    float: right;
+}
+
+#lightbox .detailPricingMatrix {
+    width: 630px !important;
+    height: 400px !important
+}
+
+.grid, .grid td {
+    border: 1px solid #ccc;
+    border-collapse: separate;
+    padding: 5px;
+    font-size: 10px !important;
+    text-align: center;
+}
+
+.grid {
+    padding: 0;
+}
+
+.grid_td {
+    border-collapse: collapse;
+}
+
+.th_grid {
+    background: #eee;
+    font-weight: bold;
+}
+
+.policies .helpLink {
+    cursor: pointer;
+    text-decoration: underline;
+    color: #06F
+}
+
+#helpArea {
+    position: absolute;
+    z-index: 9999;
+    border: 1px solid #06f;
+    padding: 0;
+}
+
+.helpBox {
+    position: absolute;
+    width: 150px;
+    color: #000;
+    font-size: 10px;
+    background: #def;
+    margin: 0;
+    padding: 0;
+}
+
+.helpBar {
+    background: #06f;
+    float: left;
+    width: 100%;
+}
+
+.helpBar img {
+    padding: 4px;
+}
+
+.helpContent {
+    margin: 25px 10px 5px;
+    font-size: 11px;
+}

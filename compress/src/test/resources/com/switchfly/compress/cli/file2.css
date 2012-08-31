@@ -1,0 +1,1277 @@
+.option {
+    overflow: hidden;
+    margin-top: 10px;
+    background: #fff;
+    position: relative; /* Sets position context */
+    *zoom: 1; /* Fixes IE6 Peekaboo bug */
+}
+
+.card_footer,
+.card_price_footer,
+.room-option-footer {
+    display: none;
+}
+
+.card_header {
+    display: none;
+}
+
+#featured_hotel_container .card_header {
+    background: transparent url(/images/featured.jpg) top left no-repeat;
+    display: block;
+    height: 36px;
+}
+
+.card_body {
+    padding: 5px;
+    position: relative; /* Sets position context */
+    overflow: hidden;
+    border: 1px solid #ccc;
+}
+
+.hotelOption .card-left {
+    width: 14%;
+    padding-right: 1%;
+    float: left;
+}
+
+.hotelOption .card-right {
+    float: left;
+    width: 85%;
+}
+
+.hotelOption .supplier_detail {
+    float: left;
+    width: 62%;
+}
+
+.hotelOption .priceContainer {
+    float: right;
+    width: 34%;
+    border: 1px solid #ccc;
+    padding: 3px;
+    background: #eee;
+}
+
+.star-rating-large {
+    float: left;
+}
+
+.hotelOption .card_price {
+    border: 1px solid #ccc;
+    text-align: center;
+    padding: 3px;
+}
+
+.hotelOption .card_price .label {
+    padding: 0;
+    margin-right: 5px;
+}
+
+.hotelOption .pricePerUnit {
+    font-size: 16px;
+}
+
+.hotelOption .card_price ul {
+    margin: 5px 0;
+}
+
+.hotelOption .card_price li {
+    display: inline;
+}
+
+.hotelOption .card_price p {
+    margin: 5px 5px 2px 5px;
+}
+
+.hotelOption .priceContainer .card_price .price,
+.roomTypes .price_or_points {
+    font-weight: bold;
+}
+
+.hotelOption .priceDetails {
+    margin: 0 5px 5px;
+}
+
+.hotelOption .card_link {
+    text-align: center;
+    margin: 5px 5px 0 5px;
+}
+
+.chooseHotelChangeFlight {
+    display: none;
+}
+
+.hotelOption .before_price {
+    padding-right: 3px;
+    color: red;
+    text-decoration: line-through;
+    font-size: 11px;
+}
+
+.hotelOption .price_promo {
+    font-weight: bold;
+    background-image: url(/images/hotelCard/bonus.jpg);
+    background-repeat: no-repeat;
+}
+
+.hotelOption .card_price .price_promo {
+    line-height: 15px;
+    background: lightyellow;
+    display: block;
+    border: 1px solid orange;
+    color: darkorange;
+}
+
+.exclusive_deal .card_header {
+    background: #eee url(/images/hotelCard/exclusiveDeal.gif) 3px 3px no-repeat;
+    height: 21px;
+    display: block;
+    padding: 3px;
+    border: 1px solid #ccc;
+    border-bottom: 0;
+}
+
+.thumbnail img {
+    height: 100px;
+    width: 100px;
+    border: 1px solid #fff;
+}
+
+.hotelOption .promotion {
+    text-align: center;
+    font-weight: bold;
+    background: #def;
+    border: 1px solid #09d;
+    border-bottom: 0;
+    font-size: 14px;
+    line-height: 20px;
+    margin-bottom: 2px;
+    padding: 2px 15px;
+    width: 100px;
+}
+
+.tripAdvisor {
+    padding-left: 20px;
+    height: 38px;
+    width: 180px;
+    float: left;
+}
+
+.tripAdvisor img {
+    height: 20px;
+    float: left;
+    padding-right: 5px;
+    height: 17px;
+    width: 85px;
+}
+
+.tripAdvisor .numReviews {
+    float: right;
+    padding-right: 6px;
+}
+
+.tripAdvisorRating {
+    height: 20px;
+    width: 85px;
+    float: right;
+}
+
+.hotelOption .card_body .supplier-info {
+    overflow: hidden;
+}
+
+.hotelOption .card_body .supplier-name {
+    margin: 0 0 3px;
+}
+
+.hotelOption .card_body .supplier-name h2 {
+    margin: 0;
+}
+
+.hotelOption .mapNumber {
+    display: none;
+}
+
+.supplier_amenities {
+    height: 22px;
+    clear: left;
+    margin: 10px 0;
+}
+
+.amenities_filter li.active_amenity {
+    background-color: #ccc;
+}
+
+.amenities_filter li {
+    background-color: #ccc;
+    display: block;
+    float: left;
+    height: 20px;
+    margin: 2px 2px 0 0;
+    width: 20px;
+}
+
+.card_body .supplier_address,
+.card_body .amenities_filter {
+    margin: 0;
+    clear: both;
+}
+
+.info_links {
+    background: #EEEEEE none repeat scroll 0 0;
+    margin: 0 0 5px 0;
+    padding: 5px;
+}
+
+.info_links a {
+    margin-right: 5px;
+}
+
+.supplier-desc {
+    margin-top: 10px;
+    *margin-top: 5px; /* Fixes height issue in IE6 */
+    clear: both;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+.hotel_description_outer {
+    position: relative; /* Sets position context */
+    *position: static; /* Fixes display issue for IE6 */
+    float: none;
+    clear: both;
+    overflow: hidden;
+}
+
+.hotel_description_outer div {
+    float: left;
+}
+
+.hotel_description_outer p.last {
+    margin: 0;
+}
+
+.hotel_description_inner {
+    height: 2.5em;
+    overflow: hidden;
+}
+
+.card_body .show_more {
+    text-align: right;
+    float: right;
+}
+
+* html .room-types {
+    /* Adds bottom padding for IE6 */
+    padding-bottom: 5px;
+}
+
+.roomsHeader {
+    border-top: 1px dotted #CCCCCC;
+    clear: left;
+    font-weight: bold;
+    margin-top: 10px;
+    overflow: hidden;
+    padding: 5px;
+}
+
+.roomsHeader .column {
+    float: left;
+}
+
+.roomsHeader .col1:after {
+    content: " / "
+}
+
+.roomsHeader .col2 {
+    margin-left: 3px;
+}
+
+.roomsHeader .col3 {
+    float: right;
+    margin-right: 21%;
+}
+
+.roomTypes .roomBody {
+    background: #eee;
+    border: 1px solid #ccc;
+    padding: 5px;
+    margin: 0 0 10px 0;
+    overflow: hidden;
+    clear: left;
+}
+
+.roomTypes .roomInfo {
+    width: 72%;
+    float: left;
+}
+
+.roomInfo .col0,
+.roomInfo .roomDetails {
+    float: left;
+}
+
+.roomInfo .col0 {
+    margin-right: 3px;
+}
+
+.roomPrice {
+    width: 25%;
+    float: right;
+}
+
+.roomDetails p {
+    margin: 0;
+}
+
+.roomDetails .grid td {
+    background: #fff;
+}
+
+.roomDetails .th_grid td {
+    background: #ccc;
+}
+
+* html .room-option {
+    /* Fixes display issue for IE6 */
+    height: 100%;
+    overflow: hidden;
+}
+
+.promo .roomBody {
+    background: lightyellow;
+    border-color: orange;
+}
+
+.room-types .price_promo {
+    color: red;
+    padding-left: 55px;
+    padding-bottom: 5px;
+    line-height: 26px;
+}
+
+.room-option p {
+    margin: 0;
+}
+
+.room-option .left-child {
+    width: 73%;
+    float: left;
+}
+
+.room-option .right-child {
+    width: 25%;
+    text-align: left;
+    float: right;
+}
+
+.room-option ul {
+    margin: 0;
+}
+
+.room-option li {
+    display: inline;
+}
+
+.room-option .price {
+    font-weight: bold;
+}
+
+.room-option .price_promo,
+.room-option .room_link {
+    display: block;
+}
+
+/* AIR CARD */
+
+.air_avail .card_body {
+    padding: 0;
+}
+
+.air_avail .card-left {
+    float: left;
+    margin: 0;
+    padding: 0;
+}
+
+.air_avail .card-right {
+    margin: 0;
+    padding: 0;
+}
+
+.leg_slice {
+    margin-bottom: 5px;
+}
+
+.top-child {
+    margin-left: 5px;
+}
+
+.top-child div {
+    float: left;
+    height: 30px;
+    line-height: 30px;
+    vertical-align: middle;
+}
+
+.bottom-child {
+    background: #eee;
+    border: 1px solid #ccc;
+    border-left: none;
+    padding: 3px;
+    *width: 620px;
+}
+
+.air_avail .logo {
+    width: 30px;
+}
+
+.air_avail .supplier {
+    font-weight: bold;
+    width: 120px;
+}
+
+.air_avail .flight {
+    width: 30px;
+}
+
+.air_avail .route {
+    width: 210px;
+}
+
+.air_avail .distance {
+    width: 60px;
+}
+
+.air_avail .dep_time,
+.air_avail .arr_time {
+    width: 50px;
+}
+
+.air_avail .duration {
+    width: 80px;
+    margin-right: 0;
+}
+
+.air_avail .card_price {
+    border: none;
+}
+
+.air_avail .card_price li {
+    display: block;
+}
+
+/* TOOLTIP TEST */
+
+.leg_slice .top-child,
+.leg_slice .bottom-child {
+    position: relative;
+}
+
+a.tip {
+    text-decoration: none;
+}
+
+a.tip span {
+    display: none;
+    position: absolute;
+    top: 5px;
+    left: 0;
+    width: 620px;
+    height: 20px;
+    line-height: 20px;
+    padding: 0 5px;
+    z-index: 100;
+    color: #fff;
+    background: #000;
+    text-align: left;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    overflow: hidden;
+}
+
+a:hover.tip {
+    font-size: 99%;
+}
+
+a:hover.tip span {
+    display: block;
+}
+
+.route {
+    overflow: visible;
+}
+
+.bottom-child a.tip span {
+    top: 0;
+    background: #FF7200;
+}
+
+.chainLogo img {
+    width: 80px;
+    padding: 10px;
+}
+
+.totalPrices {
+    font-weight: bold;
+    overflow: hidden;
+}
+
+.totalPrices .label {
+    width: 45%;
+    float: left;
+    font-weight: normal;
+    text-align: right;
+}
+
+.totalPrice .priceValue {
+    float: left;
+}
+
+.totalPrices .before_price {
+    padding: 0;
+}
+
+.bonusOffers {
+    text-align: center;
+    background: transparent url(/images/hotelCard/bonusOffers.jpg) top center no-repeat;
+    height: 22px;
+    padding-left: 18px;
+    margin-top: 3px;
+}
+
+.bonusOffers a {
+    color: #fff;
+    line-height: 20px;
+    clear: both;
+}
+
+.primaryPromotions,
+.secondaryPromotions {
+    color: red;
+    font-weight: bold;
+    margin: 0 0 2px 0 !important;
+    background: lightyellow url(/images/hotelCard/bonuses.jpg) 1px 1px no-repeat;
+    padding: 2px 5px 2px 2px;
+    border: 1px solid orange;
+    padding-left: 60px;
+}
+
+.primaryPromotions {
+    background: lightyellow url(/images/hotelCard/specials.jpg) 1px 1px no-repeat;
+}
+
+#panel1 {
+    background: #000;
+    color: #fff;
+    opacity: .8;
+    border-color: #999;
+    font-weight: bold;
+}
+
+/* bonus popup panel */
+
+#bonusPanel {
+    border: none;
+    background-color: transparent;
+    -moz-opacity: 0.85;
+    opacity: .85;
+    filter: alpha(opacity = 85);
+}
+
+#bonusPanel .container-close {
+    right: 60px;
+    top: 5px;
+}
+
+#bonusPanel .bd {
+    background: url(/images/hotelCard/bonusOverlay.gif);
+    width: 260px;
+    min-height: 86px;
+    color: white;
+}
+
+#bonusPanel ul {
+    background: url(/images/hotelCard/bonusHeader.gif) top left no-repeat;
+    padding-top: 30px;
+    padding-left: 5px;
+    width: 194px;
+}
+
+.hotelOption .crs {
+    font-size: 9px;
+    line-height: 9px;
+    padding: 2px 0;
+    text-align: center;
+}
+
+.left-child {
+    float: left;
+}
+
+.right-child {
+    float: right;
+}
+
+.pricePromo {
+    color: red;
+    padding: 2px 5px;
+    border: 1px solid orange;
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-align: center;
+    background: lightyellow;
+}
+
+.savingsPromo {
+    color: red;
+    font-weight: normal;
+    text-align: right;
+}
+
+.cashTotalPrice {
+    text-align: left;
+}
+
+.pointsTotalPrice {
+    border: 1px dotted #ccc;
+    background: #fff;
+    padding: 3px;
+    text-align: left;
+}
+
+.pointsTotalPrice .priceValue .cash {
+    display: inline;
+}
+
+.malibu_room_avail {
+    width: 100%;
+}
+
+/* review pages */
+#lightbox .hotel_review_overlay {
+    width: 800px !important;
+    height: 400px !important;
+}
+
+#userReviews .logo {
+    float: right;
+}
+
+.travelerRating h3 {
+    font-size: 16px;
+    margin: 0;
+}
+
+.travelerRating,
+.popularityIndex {
+    float: left;
+    vertical-align: bottom;
+    margin-right: 20px;
+}
+
+.popularityIndex {
+    margin-top: 20px;
+}
+
+.popularityIndex .label {
+    font-weight: bold;
+    font-size: 12px;
+}
+
+.popularityIndex .indexRating:before {
+    content: "#";
+    color: #589442;
+    font-size: 11px;
+    vertical-align: super;
+}
+
+.popularityIndex .indexRating {
+    color: #589442;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.popularityIndex .indexTotal {
+    font-weight: bold;
+}
+
+.reviewOption {
+    border: 1px solid #333;
+    background: #fff;
+    margin: 10px 0;
+}
+
+.reviewSummaries img {
+    vertical-align: bottom;
+    padding: 2px 0;
+}
+
+.reviewSummaries .label {
+    line-height: 18px;
+}
+
+/* Left */
+.reviewOption .left {
+    float: left;
+    margin-right: 5px;
+    width: 150px;
+}
+
+.header .left,
+.reviewSummaries .left {
+    float: left;
+    margin-right: 5px;
+    width: 152px;
+}
+
+.reviewSummaries {
+    margin-top: 5px;
+}
+
+.headerLabel {
+    font-weight: bold;
+    font-size: 12px;
+}
+
+.reviewText {
+    background: #fff;
+}
+
+.reviewOption p {
+    margin: 0px;
+}
+
+/* Right */
+.reviewOption .right {
+    float: left;
+    width: 75%;
+}
+
+.header .right,
+.reviewSummaries .right {
+    float: left;
+    width: 380px;
+}
+
+.detailsContainer {
+    border: 1px solid #999;
+    text-align: center;
+    width: 140px;
+    margin: 10px 5px;
+    background: #eee;
+}
+
+.detailsContainer p {
+    padding: 5px;
+}
+
+.yui-panel .container-close {
+    background: transparent url(/js/libs/yui/2.5.1/build/container/assets/close12_1.gif) no-repeat;
+}
+
+/* ** hotel reviews page ***/
+
+#userReviews .header {
+    background: #eee;
+    border-top: 1px solid #666;
+    margin-top: 10px;
+    padding: 5px 5px 0 5px;
+}
+
+#userReviews .header .left {
+    font-weight: bold;
+    font-size: 12px;
+}
+
+#reviewOptionsContainer .label {
+    font-weight: bold;
+}
+
+#reviewOptionsContainer {
+    padding: 0 5px 5px;
+    background: #eee;
+    border-bottom: 1px solid #ccc;
+}
+
+#reviewOptionsContainer .reviewOption {
+    border: 1px solid #999;
+    background: #fff;
+    margin: 5px 0;
+}
+
+/* Left */
+#reviewOptionsContainer .reviewOption .left {
+    float: left;
+    margin-right: 5px;
+    width: 150px;
+}
+
+#reviewOptionsContainer .header .left,
+#reviewOptionsContainer .reviewSummaries .left {
+    float: left;
+    margin-right: 5px;
+    width: 380px;
+}
+
+#reviewOptionsContainer .reviewText {
+    background: #fff;
+}
+
+#reviewOptionsContainer .reviewOption p {
+    margin: 0px;
+}
+
+#reviewOptionsContainer .toggle {
+    padding: 2px 5px 2px 0;
+}
+
+#reviewOptionsContainer .reviewText .title {
+    font-weight: bold;
+    font-size: 16px;
+}
+
+#reviewOptionsContainer .reviewText .title:before,
+#reviewOptionsContainer .reviewText .title:after {
+    content: "''";
+    padding: 1px;
+}
+
+/* Right */
+#reviewOptionsContainer .reviewOption .right {
+    float: left;
+}
+
+#reviewOptionsContainer .header .right,
+#reviewOptionsContainer .reviewSummaries .right {
+    float: left;
+    width: 380px;
+}
+
+#reviewOptionsContainer .reviewText {
+    padding: 5px 0 0;
+}
+
+#reviewOptionsContainer .detailsContainer {
+    border: 1px solid #999;
+    text-align: center;
+    width: 130px;
+    background: #eee;
+    padding: 5px;
+    margin: 5px;
+}
+
+#reviewOptionsContainer .detailsContainer p {
+    padding: 1px 0;
+}
+
+/* *** Auto complete - START *** */
+.modify_search_autocomplete_results .yui-ac {
+    font-size: 100%;
+    position: relative;
+}
+
+.modify_search_autocomplete_results .yui-ac-input {
+    width: 150px;
+    position: relative;
+    display: block;
+}
+
+.modify_search_autocomplete_results.yui-ac-container {
+    position: static !important;
+    top: 1.6em;
+    width: 155px;
+}
+
+.modify_search_autocomplete_results .yui-ac-content {
+    background: #eee;
+    border: 1px solid #999;
+    overflow: visible;
+    position: absolute;
+    width: 155px;
+    z-index: 9050;
+}
+
+.modify_search_autocomplete_results .yui-ac-shadow {
+    -moz-opacity: 0.4px;
+    background: #000;
+    filter: alpha(opacity = 40);
+    margin: .3em;
+    opacity: .40;
+    position: absolute;
+    width: 155px;
+    z-index: 9049;
+}
+
+.modify_search_autocomplete_results .yui-ac-content ul {
+    margin: 0;
+    padding: 0;
+    width: 155px;
+    background: #eee;
+}
+
+.modify_search_autocomplete_results .yui-ac-content li {
+    cursor: default;
+    margin: 0;
+    padding: 2px 5px;
+    white-space: nowrap;
+}
+
+.modify_search_autocomplete_results .yui-ac-content li.yui-ac-prehighlight {
+    background: #def;
+}
+
+.modify_search_autocomplete_results .yui-ac-content li.yui-ac-highlight {
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.modify_search_autocomplete_results .yui-ac-content ul,
+.modify_search_autocomplete_results .yui-ac-content {
+    width: 450px !important;
+}
+
+.hotel_info ul {
+    list-style-image: none;
+    list-style-position: inside;
+    list-style-type: disc;
+}
+
+.hotel_info ul li {
+    padding: 0.25em 0;
+    margin: 0;
+    list-style-image: none;
+    list-style-position: inside;
+    list-style-type: disc;
+}
+
+/* hotel details */
+#hotelDetailsLanding {
+    margin: auto;
+    width: 700px;
+    height: 100% !important;
+}
+
+#hotelDetailsLanding .left {
+    float: left;
+}
+
+#hotelDetailsLanding .right {
+    float: left;
+}
+
+#hotelDetailsLanding .hotelSearchBox {
+    float: right;
+}
+
+#hotelDetailsLanding .adr {
+    clear: both;
+}
+
+.hotelSearchBody {
+    overflow: visible;
+    background: #fff;
+    border: 1px solid #ccc;
+    padding: 5px 10px 10px;
+    width: 400px;
+    margin-bottom: 10px;
+}
+
+.hotelSearchHeader {
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 15px;
+    overflow: hidden;
+    height: 15px;
+    vertical-align: bottom;
+    float: left;
+    margin-bottom: 5px;
+}
+
+.hotelSearchClose {
+    float: right;
+}
+
+#hotelSearch #date_label1,
+#hotelSearch #date_label2 {
+    font-weight: bold;
+}
+
+.hotelSearchBody .subHeader {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.hotelSearchBody .subHeader .changeSearch {
+    font-weight: normal;
+}
+
+#hotelSearchForm .searchSummary {
+    border-top: 1px dotted #999;
+    padding-top: 5px;
+}
+
+.hotelSearchBody .left {
+    width: 35%;
+    display: block;
+    float: left;
+    clear: right;
+}
+
+#hotelSearchForm .searchSummary .left {
+    text-align: right;
+    width: 32%;
+    margin-right: 2%;
+}
+
+.hotelSearchBody .right {
+    width: 65%;
+    display: block;
+    float: right;
+}
+
+.hotelSearchCriteria .left,
+.hotelSearchCriteria .right {
+    width: 50%;
+}
+
+#hotelSearchForm .areaSearchRow . right {
+    float: left;
+}
+
+.hotelSearchRow {
+    width: 100%;
+    clear: both;
+    overflow: hidden;
+    margin-bottom: 5px;
+}
+
+.hotelSearchRow.last {
+    margin: 0;
+    text-align: right;
+    clear: both;
+}
+
+.hotelSearchRow img {
+    vertical-align: middle;
+    margin: 0 3px;
+}
+
+.hotelSearchRow label {
+    display: block;
+    vertical-align: middle;
+}
+
+.hotelSearchRow .nonstop {
+    display: inline;
+}
+
+.hotelSearchRow .inline {
+    float: left;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+.hotelSearchBody .searchSummary {
+    border-bottom: 1px dotted #999;
+    padding-bottom: 5px;
+    margin-bottom: 5px;
+}
+
+.hotelSearchRow .submit {
+    float: right;
+    margin-right: 5px;
+}
+
+#hotelSearchForm .errorMessage {
+    clear: both;
+}
+
+.hotelSearchBody .hotelSearchChoices ul {
+    list-style-type: none;
+    margin: 0;
+    width: 100%;
+}
+
+.hotelSearchBody .hotelSearchChoices li {
+    display: inline;
+    height: 26px;
+    margin: 0 3px 0 0;
+    padding: 0 15px 0 0;
+}
+
+#hotelSearchForm  .numberRooms {
+    float: left;
+    padding-right: 148px;
+}
+
+#hotelSearchForm  .numberRooms.hotelOnly {
+    padding-right: 49px;
+}
+
+#hotelSearchForm  .passengerCount {
+    float: left;
+}
+
+.hotelInformation {
+    width: 275px;
+}
+
+.hotelInformation h3 {
+    font-size: 16px;
+    margin: 0;
+}
+
+#hotelLandingTabbedView {
+    width: 700px;
+    margin: auto;
+}
+
+#hotelLandingTabbedView .yui-content {
+    padding: 10px;
+}
+
+.hotelAmenities .left {
+    float: left;
+}
+
+.hotelAmenities h4 {
+    margin: 15px 0 5px;
+    font-size: 110%;
+}
+
+.hotelAmenities .left ul {
+    margin: 0 30px 0 0;
+}
+
+.hotelDetailsText {
+    float: right;
+    width: 388px;
+    margin-left: 10px;
+}
+
+.hotelPropertyDescription {
+    line-height: 1.5em;
+}
+
+.hotelImages {
+    float: left;
+    padding: 5px 0;
+    background: #fff;
+    border: 1px solid #ccc;
+}
+
+.imageViewer {
+    padding-left: 35px;
+    min-height: 200px;
+}
+
+.landingTripAdvisorLogo {
+    clear: both;
+    width: 118px;
+}
+
+#show_hotel_details .termsAndConditions,
+.hotelDetailsLandingContainer .termsAndConditions {
+    padding-top: 10px;
+    font-size: 9px;
+    width: 700px;
+    margin: auto;
+}
+
+/* carousel */
+.carousel-component {
+    padding: 8px 16px 4px 16px;
+    margin: 0px;
+}
+
+.carousel-component .carousel-list li {
+    margin: 4px;
+    width: 79px;
+    /* img width is 75 px from flickr + a.border-left (1) + a.border-right(1) +
+img.border-left (1) + img.border-right (1)*/
+    height: 93px; /* image + row of text (87) + border-top (1) + border-bottom(1) + margin-bottom(4) */
+    /*    margin-left: auto;*/
+    /* for testing IE auto issue */
+}
+
+.carousel-component .carousel-list li a {
+    display: block;
+    border: 1px solid #e2edfa;
+    outline: none;
+}
+
+.carousel-component .carousel-list li a:hover {
+    border: 1px solid #aaaaaa;
+}
+
+.carousel-component .carousel-list li img {
+    border: 1px solid #999;
+    display: block;
+}
+
+.carousel-component .carousel-prev {
+    position: absolute;
+    top: 40px;
+    z-index: 3;
+    cursor: pointer;
+    left: 5px;
+}
+
+.carousel-component .carousel-next {
+    position: absolute;
+    top: 40px;
+    z-index: 3;
+    cursor: pointer;
+    right: 5px;
+}
+
+/* tab navigator */
+#hotelLandingTabbedView .yui-content {
+    min-height: 200px;
+}
+
+#hotelLandingTabbedView .yui-navset .yui-nav a,
+#hotelLandingTabbedView .yui-navset .yui-navset-top .yui-nav a {
+    background: #d8d8d8 url(sprite.png) repeat-x;
+    border: solid #a3a3a3;
+    border-width: 0 1px;
+    color: #000;
+    position: relative;
+    text-decoration: none;
+}
+
+#hotelLandingTabbedView .yui-navset .yui-nav .selected a,
+#hotelLandingTabbedView .yui-navset .yui-nav .selected a:focus, .yui-skin-sam .yui-navset .yui-nav .selected a:hover {
+    background: #2647a0 url(sprite.png) repeat-x left -1400px;
+    color: #fff;
+}
+
+#hotelLandingTabbedView .yui-navset .yui-nav a:hover,
+#hotelLandingTabbedView .yui-navset .yui-nav a:focus {
+    background: #bfdaff url(sprite.png) repeat-x left -1300px;
+    outline: 0;
+}
+
+#hotelLandingTabbedView .yui-navset .yui-content {
+    background: #edf5ff;
+}
+
+#hotelLandingTabbedView .yui-navset .yui-content,
+#hotelLandingTabbedView .yui-navset .yui-navset-top .yui-content {
+    border: 1px solid #808080;
+    border-top-color: #243356;
+    padding: 0.25em 0.5em;
+}
+
+#hotelLandingTabbedView #hotelVirtualTour {
+    margin: auto;
+    height: 460px;
+    width: 560px;
+}
+
+#hotelLandingMapCanvas {
+    width: 100%;
+    height: 460px;
+}

@@ -1,0 +1,2362 @@
+/*
+Version: $Id: global.css 46943 2009-09-10 23:17:12Z mishikura $
+*/
+
+.edit_page_box {
+    border: 1px dotted #ccc;
+    margin-bottom: 5px;
+    padding: 2px 2px 7px;
+}
+
+.edit_page_name {
+    background-color: #def;
+    padding: 5px;
+    border: 1px solid #ccc;
+}
+
+.modifyContentLink {
+    background-color: yellow;
+    color: #000;
+    cursor: default;
+    font-size: 11px !important;
+    font-weight: bold !important;
+}
+
+.modifyContentImg {
+    height: 16px !important;
+    width: 16px !important;
+    border: none !important;
+}
+
+.label {
+    padding: 2px;
+    text-align: right;
+    font-weight: bold;
+}
+
+.price {
+    font-weight: bold;
+}
+
+.page_header {
+    font-size: 16px;
+    font-weight: bold;
+    padding: 0;
+}
+
+.sub_page_header {
+    font-size: 14px;
+    font-weight: bold;
+    padding: 10px 0 2px;
+}
+
+.errorMessage {
+    overflow: hidden;
+    color: red;
+    line-height: 24px;
+    margin-bottom: 10px;
+    padding: 5px;
+    border: 1px solid orange;
+    background: lightyellow;
+}
+
+.errorMessage img {
+    float: left;
+    margin-right: 10px;
+}
+
+.errorMessage p {
+    margin-bottom: 0;
+    line-height: 12px;
+}
+
+.errorMessage .debugMessage {
+    font-style: normal;
+    line-height: 12px;
+    margin-left: 36px;
+}
+
+.red {
+    color: red;
+    font-style: italic;
+}
+
+.sm {
+    color: #333;
+    font-size: 10px;
+}
+
+/* TEST MODE + DEVELOPER MODE (top of page) */
+#UTIL {
+    background: #eee;
+    width: 100%;
+    border-bottom: 1px solid #ccc;
+    font-family: verdana, helvetica, arial, sans-serif;
+}
+
+#TEST {
+    background: orange;
+    padding: 5px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+#DEV {
+    padding: 5px;
+    text-align: center;
+    margin-bottom: 0;
+}
+
+#DEV ul {
+    margin: 0;
+}
+
+#DEV .debug {
+    margin-top: 3px;
+}
+
+#DEV .separator {
+    margin: 0 3px;
+}
+
+#DEV .subSeparator {
+    margin: 0;
+    color: #06f;
+}
+
+#DEV li {
+    display: inline;
+    margin-right: 5px;
+}
+
+.PG {
+    width: 975px;
+    margin: 10px auto 0;
+}
+
+#MN {
+    padding: 10px 0;
+    width: 100%;
+    border-collapse: separate;
+}
+
+#INFO {
+    padding: 5px;
+    margin-top: 10px;
+}
+
+#INFO p {
+    text-align: center;
+    margin: 0;
+    color: #999;
+}
+
+/* PAGE LAYOUT */
+.page_v1,
+.page_v2 {
+    width: 975px;
+    margin: 10px auto;
+}
+
+.page_v1_c1,
+.page_v2_c1 {
+    float: left;
+    overflow: visible;
+    width: 180px;
+    margin-right: 10px;
+}
+
+.page_v2_c1 {
+    width: 305px;
+}
+
+.page_v1_c2,
+.page_v2_c2 {
+    float: right;
+    overflow: visible;
+    width: 710px;
+}
+
+.page_v1_c3 {
+    float: left;
+    width: 150px;
+}
+
+.page_v1_c2_wide {
+    float: left;
+    width: 785px;
+}
+
+#search,
+#select,
+#confirm,
+#checkout,
+#payment,
+#activity-detail,
+#special {
+    margin: 10px auto;
+}
+
+#interstitial {
+    margin: none;
+}
+
+.avail table,
+.specials table {
+    background: transparent;
+}
+
+/* ARC/SEARCH > AJAX AUTOCOMPLETE: */
+
+#search .product_checkbox {
+    margin-left: 2px;
+}
+
+#search .yui-skin-sam .yui-ac {
+    font-size: 100%;
+    position: relative;
+}
+
+#search .yui-skin-sam .yui-ac-input {
+    width: 265px;
+    position: relative;
+    display: block;
+}
+
+#search .yui-skin-sam .yui-ac-container {
+    position: absolute;
+    top: 1.6em;
+    width: 270px;
+}
+
+#search .yui-skin-sam .yui-ac-content {
+    background: #fff;
+    border: 1px solid #333;
+    overflow: visible;
+    position: absolute;
+    width: 270px;
+    z-index: 9050;
+}
+
+#search .yui-skin-sam .yui-ac-shadow {
+    -moz-opacity: 0.4px;
+    background: #000;
+    filter: alpha(opacity = 40);
+    margin: .3em;
+    opacity: .40;
+    position: absolute;
+    width: 270px;
+    z-index: 9049;
+}
+
+#search .yui-skin-sam .yui-ac-content ul {
+    margin: 0;
+    padding: 0;
+    width: 270px;
+}
+
+#search .yui-skin-sam .yui-ac-content li {
+    cursor: default;
+    margin: 0;
+    padding: 2px 5px;
+    white-space: nowrap;
+}
+
+#search .yui-skin-sam .yui-ac-content li.yui-ac-prehighlight {
+    background: #def;
+}
+
+#search .yui-skin-sam .yui-ac-content li.yui-ac-highlight {
+    font-weight: bold;
+    padding-left: 20px;
+    text-decoration: underline;
+}
+
+/* Addresses IE destination input bleed through on departure autocomplete list */
+#air_area_search1_auto_complete,
+#area_search1_auto_complete {
+    z-index: 9051;
+}
+
+.malibu_be form li.row,
+.be_v2 form li.row {
+    display: block;
+    float: none;
+    clear: both;
+    margin-bottom: 0.5em;
+    overflow: visible;
+}
+
+#area_search1_error,
+#area_search2_error {
+    float: none;
+}
+
+#search .yui-skin-sam .yui-ac-content ul,
+#search .yui-skin-sam .yui-ac-content {
+    width: 450px !important;
+}
+
+.malibu_be form li.row span,
+.be_v2 form li.row span {
+    display: block;
+    float: left;
+    margin-right: 5px;
+}
+
+.malibu_be form li.row.date span,
+.be_v2 form li.row.date span {
+    display: inline;
+    float: none;
+}
+
+.malibu_be form table span,
+.be_v2 form table span {
+    display: inline !important;
+    float: none !important;
+}
+
+.malibu_be form label,
+.be_v2 form label {
+    display: block;
+    float: none;
+    clear: both;
+}
+
+fieldset.malibu_be_package {
+    padding: 0;
+    margin: 0;
+}
+
+fieldset.malibu_be_package li {
+    float: left;
+    width: 20px;
+    height: 30px;
+    margin-right: 35px;
+    padding: 0;
+}
+
+/* BOOKING ENGINES
+ "AJAX on Left */
+
+.malibu_be .malibu_error {
+    color: red;
+    display: block;
+    font-weight: bold;
+}
+
+.malibu_be form {
+    background: #eee;
+    border: 1px solid #999;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    width: 95%;
+}
+
+#search .yui-skin-sam,
+#search .yui-ac-input {
+    width: 95%;
+}
+
+.malibu_be form .malibu_be_header {
+    background: #ccc;
+    display: block;
+    font-size: 14px;
+    font-weight: bold;
+    margin: 0;
+    padding: 5px 5px 5px 10px;
+}
+
+.malibu_be .malibu_be_info {
+    padding: 5px 5px 10px;
+}
+
+.malibu_be .submit_link {
+    border: none;
+    position: relative;
+    top: 5px;
+    float: right;
+}
+
+.malibu_be table {
+    background: transparent;
+}
+
+/* "middle" booking engines */
+.be_v1 {
+    background: #fff;
+    border: 1px solid #999;
+    margin: 5px 5px 10px;
+    overflow: hidden;
+    width: 458px;
+}
+
+.be_v1_header {
+    background: #999;
+    border-bottom: 1px solid #999;
+    color: #fff;
+    font-size: 13px;
+    font-weight: bold;
+    padding: 2px 5px;
+    width: 458px;
+}
+
+.be_v1_info {
+    padding: 5px;
+    width: 458px;
+}
+
+/* "On left" booking engines */
+.be_v2 {
+    background: #fff;
+    border: 1px solid #999;
+
+    margin: 5px 5px 10px;
+    overflow: hidden;
+    width: 293px;
+}
+
+.be_v2_header {
+    background: #999;
+    border-bottom: 1px solid #999;
+    color: #fff;
+    font-size: 13px;
+    font-weight: bold;
+    padding: 2px 5px;
+    width: 293px;
+}
+
+.be_v2_info {
+    padding: 5px;
+    width: 293px;
+}
+
+/* NEW MODIFY SEARCH (9.1) START */
+
+#modifySearch {
+    background: #eee;
+    border: 1px solid #999;
+    padding: 5px;
+    margin-bottom: 5px;
+    overflow: visible;
+    height: 15px;
+    cursor: pointer;
+}
+
+.modifySearchToggle {
+    background: transparent url('/images/filter_arrow_right.gif') center left no-repeat;
+    padding-left: 17px;
+}
+
+#modifySearch:hover {
+    background-color: #def;
+}
+
+.modifySearchToggle a {
+    color: #000;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.modifySearchBody {
+    overflow: visible;
+    background: #fff;
+    border: 5px solid #ccc;
+    padding: 5px 10px 10px;
+    width: 400px;
+    z-index: 9999;
+    display: none;
+    position: absolute;
+}
+
+.modifySearchHeader {
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 15px;
+    overflow: hidden;
+    height: 15px;
+    vertical-align: bottom;
+    float: left;
+    margin-bottom: 5px;
+}
+
+.modifySearchClose {
+    float: right;
+}
+
+#modifySearch #date_label1,
+#modifySearch #date_label2 {
+    font-weight: bold;
+}
+
+.modifySearchBody .subHeader {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.modifySearchBody .subHeader .changeSearch {
+    font-weight: normal;
+}
+
+#modifySearchForm .searchSummary {
+    border-top: 1px dotted #999;
+    padding-top: 5px;
+}
+
+.modifySearchBody .left {
+    width: 35%;
+    display: block;
+    float: left;
+    clear: right;
+}
+
+#modifySearchForm .searchSummary .left {
+    text-align: right;
+    width: 32%;
+    margin-right: 2%;
+}
+
+.modifySearchBody .right {
+    width: 65%;
+    display: block;
+    float: right;
+}
+
+.modifySearchCriteria .left,
+.modifySearchCriteria .right {
+    width: 50%;
+}
+
+.modifySearchRow.last {
+    margin: 10px 0 0 0;
+    text-align: right;
+}
+
+.modifySearchRow img {
+    vertical-align: middle;
+    margin: 0 3px;
+}
+
+.modifySearchRow label {
+    display: block;
+    vertical-align: middle;
+}
+
+.modifySearchRow .nonstop {
+    display: inline;
+}
+
+.modifySearchRow .inline {
+    float: left;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+.modifySearchBody .searchSummary {
+    border-bottom: 1px dotted #999;
+    padding-bottom: 5px;
+    margin-bottom: 5px;
+}
+
+.modifySearchRow .submit {
+    float: right;
+    margin-right: 5px;
+}
+
+/* NEW MODIFY SEARCH (9.1) END */
+
+#activeAgent {
+    line-height: 24px;
+}
+
+#activeAgent img {
+    float: left;
+}
+
+/* Matrix Display (both "Air Matrix" on #select, and "Calendar" on #confirm */
+.air_matrix {
+    border: 2px solid #999;
+    margin-top: 10px;
+    text-align: center;
+    overflow-x: scroll;
+    overflow-y: visible;
+}
+
+#select .air_matrix .air_matrix_header {
+    color: #333;
+    font-size: 12px;
+    font-weight: bold;
+    background: #999;
+    padding: 0 5px 5px 5px;
+    display: none;
+}
+
+.air_matrix_details {
+    padding: 0;
+}
+
+.air_matrix_details table {
+    width: 100% !important;
+    border: 1px solid #999;
+    border-collapse: separate;
+    text-align: center;
+}
+
+.air_matrix_details td:hover {
+    background: #def;
+}
+
+.air_matrix .air_matrix_details .air_matrix_price,
+.air_matrix .air_matrix_details .air_matrix_price_highlight {
+    border: 1px solid #ccc;
+    border-collapse: separate;
+    font-size: 12px;
+    height: 30px;
+    margin: 0;
+    padding: 2px 5px;
+    vertical-align: middle; /* width:610px; */
+}
+
+.air_matrix .air_matrix_details tr {
+    width: 610px;
+}
+
+#select .air_matrix a {
+    white-space: nowrap;
+}
+
+#select .air_matrix .air_matrix_details .air_matrix_price_highlight a {
+    text-decoration: none;
+}
+
+/* Price total (at top of summary view) */
+#select .air_matrix a,
+#confirm .avail_details a {
+    font-size: 12px;
+}
+
+#select .air_matrix .air_matrix_details .air_matrix_price_highlight,
+#activity-detail .avail_details_item,
+#confirm .avail_details .avail_details_item {
+    background: #def;
+}
+
+.avail_header .air_prices_bar,
+.avail .avail_info .availability_taxes_included {
+    font-size: 10px;
+    font-weight: normal;
+}
+
+/* AVAILABILITY */
+.header {
+    font-weight: bold;
+    font-size: 16px;
+    color: #333;
+}
+
+#select .avail_choose_info {
+    background: #eee;
+    margin-top: 10px;
+    padding: 5px;
+    border: 1px solid #999;
+}
+
+#select .avail_choose_info .avail_sort {
+    padding-top: 5px;
+}
+
+.arc_pager {
+    text-align: right;
+    margin: 0 0 5px 0;
+}
+
+.avail_header .summary-per span {
+    font-weight: normal;
+}
+
+#select .avail .avail_info {
+    background: #eee;
+    border: 1px dotted #999;
+    border-bottom: none;
+    padding: 5px;
+}
+
+#select .avail .avail_info td {
+    font-size: 14px;
+}
+
+#select .avail .avail_info span {
+    font-weight: normal;
+}
+
+#select .avail_details {
+    padding: 5px;
+    border: 1px solid #999;
+}
+
+.avail_details table {
+    width: auto;
+    margin-top: 5px
+}
+
+#select .avail_details tr {
+    border-collapse: separate;
+    font-weight: normal;
+}
+
+#select .avail_details td {
+    padding: 2px 2px 2px 0;
+}
+
+#select .avail_details td img {
+    padding-right: 5px;
+}
+
+#select .avail .avail_details tr .highlight {
+    background: #def;
+    border-collapse: separate;
+    font-weight: normal;
+}
+
+#select .avail .avail_details .choose_flights {
+    padding-left: 5px;
+    vertical-align: middle;
+}
+
+#select .avail_details tr.avail_details_column_headers,
+#select .avail_details td.avail_details_column_headers {
+    border-top: 1px solid #999;
+    background: #eee;
+    border-bottom: 1px dotted #999;
+    font-weight: bold;
+    text-align: left;
+}
+
+#select .avail_details .sub_section_details_item td,
+#select .avail_details .avail_details_column_headers td {
+    padding: 5px 5px 5px 10px;
+    vertical-align: bottom;
+    border: 1px dotted #ccc;
+    border-collapse: collapse;
+}
+
+#select .avail_details tr.avail_details_item td {
+    background: #fff;
+    padding: 5px 5px 0 0;
+    vertical-align: top;
+}
+
+#select .avail_details tr.avail_details_item td a {
+    float: left;
+}
+
+#select .avail .avail_details .price a {
+    float: none;
+}
+
+.hotelLandingPage {
+    height: 25px;
+    margin: 10px 0 0 !important;
+    clear: both;
+}
+
+.hotelLandingPage .yui-skin-sam {
+    width: 280px !important;
+}
+
+.hotelLandingPage .yui-skin-sam,
+.hotelLandingPage .submit_link {
+    float: left;
+}
+
+#select .avail_details .hotel_info .thumbnail img {
+    border: 2px solid #333;
+    margin-right: 5px;
+}
+
+#select .avail_details .hotel_info .name_and_stars {
+    font-size: 14px;
+    margin-bottom: -10px;
+}
+
+#select .avail_details .hotel_info .name_and_stars span {
+    padding-left: 10px;
+}
+
+#select .avail_details .hotel_info .addr {
+    margin-bottom: -10px;
+}
+
+#select .avail_details .hotel_info .availability_more {
+    float: right;
+    font-size: 12px;
+    padding-right: 10px;
+}
+
+#select .avail .avail_footer {
+    text-align: right;
+    overflow: hidden;
+}
+
+#select .avail .avail_footer .sm {
+    color: #999;
+    vertical-align: top;
+}
+
+/* AJAX WAITING POPOVER */
+#wait_c #wait,
+#wait_c #wait div {
+    border: none;
+}
+
+#wait_c #wait {
+    /* Background image defined in global_images.css */
+    width: 244px !important;
+    height: 94px;
+}
+
+#wait_c #wait .hd {
+    background: transparent !important; /* !important to override downline master.css changes */
+    color: #333;
+    font-weight: bold;
+    margin: 0;
+    padding: 10px;
+    text-align: center;
+}
+
+#wait_c #wait .bd {
+    height: 50px;
+}
+
+#wait_c #wait .bd img {
+    padding: 15px 0 0 5px;
+}
+
+.star-rating-large {
+    display: block;
+    height: 21px;
+    width: 93px;
+    border: none;
+    float: right;
+}
+
+#hotel_avail_container div.malibu_hotel_avail div.star-rating-large {
+    position: relative !important;
+}
+
+.rating-large_0_5 {
+    background-position: 0 -22px !important;
+}
+
+.rating-large_1 {
+    background-position: 0 -44px !important;
+}
+
+.rating-large_1_5 {
+    background-position: 0 -66px !important;
+}
+
+.rating-large_2 {
+    background-position: 0 -88px !important;
+}
+
+.rating-large_2_5 {
+    background-position: 0 -110px !important;
+}
+
+.rating-large_3 {
+    background-position: 0 -133px !important;
+}
+
+.rating-large_3_5 {
+    background-position: 0 -154px !important;
+}
+
+.rating-large_4 {
+    background-position: 0 -176px !important;
+}
+
+.rating-large_4_5 {
+    background-position: 0 -198px !important;
+}
+
+.rating-large_5 {
+    background-position: 0 -220px !important;
+}
+
+.rating-large_5_5 {
+    background-position: 0 -242px !important;
+}
+
+.rating-large_6 {
+    background-position: 0 -264px !important;
+}
+
+.rating-large_6_5 {
+    background-position: 0 -286px !important;
+}
+
+.rating-large_7 {
+    background-position: 0 -308px !important;
+}
+
+/* ACTIVITY DETAIL PAGE */
+#activity-detail .avail {
+    border: 1px solid #999;
+}
+
+#activity-detail .avail_header {
+    background: #eee;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 5px;
+}
+
+#activity-detail .avail .avail_details {
+    padding: 5px;
+}
+
+#activity-detail .avail .avail_details table {
+    width: 100%;
+}
+
+#activity-detail .avail .avail_details .activity_choice_card {
+    border-collapse: separate;
+    border-bottom: 1px solid #999;
+    margin-bottom: 10px;
+}
+
+/*
+********************************************************
+^6   =CONFIRM (itinerary.cfm)
+********************************************************
+
+
+Trip Summary (shows in left column)
+AKA "My Itinerary" in logic settings
+------------------------------------
+The following applies to all Trip Summary types */
+
+.trip_summary {
+    background: #fff;
+    border: 1px solid #999;
+}
+
+.trip_summary_header {
+    background: #eee;
+    font-weight: bold;
+    padding: 5px;
+    text-align: center;
+}
+
+.trip_summary_info {
+    padding: 5px;
+    text-align: left;
+}
+
+.trip_summary_info .itin_air,
+.trip_summary_info .itin_air_depart,
+.trip_summary_info .itin_air_return,
+.trip_summary_info .package_total,
+.trip_summary_info .price_or_points,
+.trip_summary_info .itin_room,
+.trip_summary_info .itin_room_checking,
+.trip_summary_info .itin_room_checkout,
+.trip_summary_info .itin_insurance {
+    font-weight: bold;
+    line-height: 14px;
+}
+
+.trip_summary_info img {
+    padding-right: 3px;
+}
+
+.trip_summary_info td.date {
+    font-weight: bold;
+    padding: 5px 0pt;
+}
+
+.trip_summary_info .dep_arr span {
+    font-style: italic;
+}
+
+/* Activity availability */
+
+#confirm .page_v1_c2_wide .avail_addon_area {
+    color: #333;
+    font-size: 12px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+#confirm .avail {
+    border: 2px solid #333;
+    margin-top: 5px;
+}
+
+#confirm .avail_header {
+    background: #eee;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 5px;
+}
+
+#confirm .avail_details {
+    padding: 5px;
+    text-align: justify;
+}
+
+#confirm .avail .avail_details img {
+    padding: 0 5px 10px 0 !important;
+}
+
+#confirm .avail_details a.more_link {
+    float: right;
+    padding-right: 5px;
+    margin-bottom: 5px;
+}
+
+#confirm .avail_details .avail_details_item td {
+    padding: 5px 0 2px 0;
+}
+
+#confirm .sub_section_details_item {
+    padding: 0 3px;
+}
+
+#confirm td.sub_section_details_item {
+    vertical-align: top;
+}
+
+#confirm td.flight_class {
+    border-collapse: separate;
+    padding-bottom: 10px;
+}
+
+#confirm .itin .itin_header img {
+    width: 610px !important; /* Specifically addresses "your_itinerary_comp.gif" use in header */
+}
+
+/* Calendar (shows at bottom of #confirm page) */
+
+#confirm .air_matrix {
+    border: none;
+    text-align: center;
+    overflow: hidden;
+}
+
+#confirm .air_matrix_details {
+    border: none;
+    margin: 0;
+}
+
+#confirm .air_matrix_details td:hover {
+    background: #fff;
+}
+
+#confirm .air_matrix_details .itin_header td:hover {
+    background: #def;
+}
+
+#confirm tr .itin_header {
+    background: #fff;
+    color: #000;
+}
+
+#confirm .air_matrix_details .itin_header,
+#confirm .air_matrix_details .itin_header td {
+    border: 1px solid #ccc;
+    background: #eee;
+}
+
+#confirm .air_matrix_details .itin_header {
+    height: 20px;
+    background: #ccc;
+    vertical-align: top;
+    border-bottom: 1px solid #999;
+}
+
+#confirm .air_matrix_details .itin_header td {
+    background: #eee;
+    vertical-align: middle;
+}
+
+#confirm .air_matrix .air_matrix_details .air_matrix_price {
+    border: 1px solid #ccc;
+    border-collapse: separate;
+    height: 30px;
+    vertical-align: top;
+}
+
+#confirm .air_matrix .air_matrix_details .air_matrix_price .highlight {
+    background: #eee;
+    font-weight: bold;
+    text-align: left;
+    padding: 3px;
+    height: auto;
+}
+
+#confirm .air_matrix .air_matrix_details .air_matrix_price {
+    padding: 0;
+    width: 85px;
+}
+
+#confirm .air_matrix .air_matrix_details .air_matrix_price br {
+    display: none;
+}
+
+#confirm .air_matrix .air_matrix_details .air_matrix_price .highlight span {
+    font-weight: normal;
+    display: block;
+    padding: 5px;
+    text-align: left;
+}
+
+#confirm .air_matrix .air_matrix_details .air_matrix_price img {
+    padding: 0;
+}
+
+#confirm .air_matrix_price table {
+    border: none;
+}
+
+.co #traveler_1 .co_info .co_traveler_1_notes {
+
+    font-size: 10px;
+    font-weight: normal;
+    margin-left: 10px;
+}
+
+.email_list {
+    padding: 5px 5px 0pt 25px;
+    font-size: 11px;
+}
+
+.co .email_list input {
+    margin: 0 5px;
+}
+
+.co_info .auto_fill_pnr_owner {
+    font-size: 11px;
+    margin-right: 12px;
+    font-weight: bold;
+}
+
+.co_info .auto_fill_traveler,
+.co_info .auto_fill_agent,
+.co_info .auto_fill_other {
+    color: #333;
+    margin: 0 15px 0 3px;
+}
+
+.co_details {
+    background: #fff;
+    padding: 5px 5px 5px 20px;
+    overflow-y: auto;
+}
+
+.co_details a,
+.co_details a:visited {
+    margin-right: 5px;
+}
+
+.co .co_details td {
+    padding-right: 15px;
+}
+
+.co_footer {
+    background: #fff;
+    padding: 5px;
+    text-align: right;
+}
+
+.co_terms {
+    background: #eee;
+    font-size: 11px;
+    padding: 5px;
+}
+
+/* AIR - Seat Map */
+#choose_air_seats {
+    color: #333;
+    font-size: 12px;
+    margin-left: 0;
+    margin-top: 5px;
+}
+
+#choose_air_seats .large_logo {
+    float: left;
+    height: 98px;
+    margin-left: 10px;
+    margin-top: 10px;
+    width: 100px;
+}
+
+#choose_air_seats img {
+    margin: .025em;
+}
+
+#choose_air_seats span {
+    clear: both;
+    float: left;
+    margin-top: 5px;
+}
+
+#choose_air_seats .seat_map {
+    clear: both;
+    float: left;
+    margin: 20px 0 40px;
+    width: 400px;
+}
+
+#choose_air_seats .seats_header {
+    font-size: 11px;
+    font-weight: normal;
+    left: 100px;
+    position: absolute;
+    top: 25px;
+    width: 230px;
+}
+
+#choose_air_seats .legend {
+    clear: both;
+    display: inline;
+    float: left;
+    margin: 10px 0 5px 5px;
+}
+
+#choose_air_seats .legend td {
+    padding-right: 10px;
+}
+
+#choose_air_seats li {
+    display: block;
+    list-style: none;
+    margin-left: 10px;
+}
+
+#choose_air_seats .seats_header .label {
+    display: inline;
+    font-weight: bold;
+    line-height: 15px;
+    padding-right: 10px;
+    text-align: right;
+}
+
+#choose_air_seats .anchor {
+    clear: both;
+    float: left;
+    margin: 30px 0 20px;
+}
+
+.itin .itin_info {
+    background: #eee;
+    border-bottom: 1px solid #ccc;
+}
+
+.itin .itin_info .lable_booking_on_cc_from {
+    font-size: 14px;
+    font-weight: bold;
+    padding-left: 5px;
+}
+
+.itin .itin_info .customer_id {
+    font-size: 14px;
+    font-weight: bold;
+    padding-left: 5px;
+}
+
+.co .co_details .label {
+    font-weight: bold;
+    font-size: 11px;
+}
+
+.co .co_details .supported_cards .label {
+    margin: 0;
+}
+
+.co_details,
+.co_footer {
+    font-size: 11px;
+    padding: 5px;
+}
+
+#cc_num {
+    width: 115px;
+}
+
+.co .co_details .amount {
+    color: #999;
+    padding-right: 15px;
+}
+
+.co .co_details #cc_transid,
+.co .co_details #check_memo,
+.co .co_details #cert_tracking,
+.co .co_details #cash_memo,
+.co .co_details #misc_memo,
+.co .co_details #gl_memo {
+    width: 110px;
+}
+
+.co .co_details #check_no,
+.co .co_details #cc_auth_num,
+.co .co_details #cert_id,
+.co .co_details #cash_auth_no,
+.co .co_details #misc_auth_no {
+    width: 70px;
+}
+
+.co .co_details #running_total {
+    background: #ccc !important;
+    font-weight: normal;
+    font-size: 12px;
+    width: 69px;
+    height: 15px;
+    padding: 1px 3px;
+}
+
+#credit_card_section_addressid .co_details {
+    margin-top: 5px;
+}
+
+#credit_card_section_addressid .co_footer {
+    padding-bottom: 0;
+}
+
+#credit_card_section_addressid .submit_link {
+    bottom: 30px;
+    float: right;
+    margin: 0 10px 0 0;
+    position: relative;
+}
+
+.activityInfo .travelerSelect {
+    margin-right: 5px;
+}
+
+.travelerAge label {
+    font-weight: bold;
+}
+
+.i_agree {
+    color: red;
+    font-size: 12px;
+    font-weight: bold;
+    margin-right: 5px;
+    padding-left: 5px;
+}
+
+.i_disagree {
+    padding-left: 5px;
+}
+
+/* Specials Page(s) */
+.specials {
+    border: 1px solid #999;
+    margin-top: 10px;
+}
+
+.specials_header,
+.specials_details,
+.specials_footer {
+    font-size: 11px;
+}
+
+.specials_header {
+    background: #eee;
+    font-weight: bold;
+    padding: 5px;
+}
+
+.specials_header td {
+    color: #fff;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.specials_details,
+.specials_footer {
+    background: #fff;
+    padding: 10px 0 10px 10px;
+}
+
+.specials_details .be_v2 {
+    background: #eee;
+}
+
+.specials_details .be_v2_info td {
+
+    font-weight: bold;
+}
+
+.specials_details .be_v2_info .submit_link {
+    float: right;
+    padding-bottom: 10px;
+    padding-right: 20px;
+}
+
+.specials_footer {
+    bottom: 5px;
+    left: 5px;
+    padding: 2px 5px 5px;
+    position: relative;
+    text-align: right;
+}
+
+.city_page_header,
+.city_page_details {
+    width: 458px;
+}
+
+.city_page {
+    background: #fff;
+    border: 2px solid #ccc;
+    margin-top: 10px;
+    width: 468px;
+}
+
+.city_page_header {
+    background: #666;
+    color: #fff;
+    font-size: 13px;
+    font-weight: bold;
+    padding: 2px 5px;
+}
+
+/* Google Maps !DEPRECATED BY GOOGLE! */
+.gmaps,
+#map {
+    display: none !important;
+}
+
+/* login pages ************************************************************************/
+.login {
+    background: #fff;
+    border: 2px solid #ccc;
+    margin-top: 10px;
+}
+
+.login_header,
+.login_details,
+.login_footer {
+}
+
+.login_footer {
+    background: #fff;
+    border-top: 1px solid #ccc;
+    font-size: 11px;
+    padding: 2px 5px;
+    text-align: right;
+}
+
+.profile_history {
+    background: #fff;
+    border: 2px solid #ccc;
+    margin-top: 10px;
+}
+
+.profile_history_columns td {
+    font-weight: bold;
+    text-align: center;
+}
+
+.profile_history_details {
+    border-top: 1px solid #333;
+    font-size: 11px;
+}
+
+/* cruise styles */
+.table_air_room_upsell_for_cruise {
+    background-color: #def;
+    border: 2px solid #000;
+    padding: 2px;
+}
+
+.tabs {
+    border-collapse: collapse;
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
+.tabs a {
+    font-size: 12px;
+}
+
+.tabs_on {
+    background-color: #999;
+    border: 2px solid #69C;
+    border-bottom: 1px solid #69C;
+    color: #fff;
+    font-size: 12px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.tabs_off {
+    background: #999;
+    border: 2px solid #ccc;
+    border-bottom: 1px solid #333;
+    font-size: 12px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.tabs_sub_bar {
+    background: #999;
+    height: 10px;
+    padding: 2px;
+}
+
+.avail_table {
+    background-color: #333;
+    font-size: 13px;
+    padding: 2px;
+}
+
+.avail_table td,
+.avail_table a {
+    background-color: #333;
+    color: #fff;
+    font-size: 13px;
+    padding: 2px;
+}
+
+.avail_sub_table {
+    border-collapse: collapse;
+}
+
+.avail_sub_table_bar td {
+    background: #eee;
+    font-weight: bold;
+    padding: 3px;
+    text-align: center;
+}
+
+.helpBox {
+    background: #ffc;
+    border: 2px solid #000;
+    color: #000;
+    font-size: 10px;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    width: 250px;
+}
+
+.helpBar {
+    background: #333;
+    float: left;
+    width: 100%;
+}
+
+.helpContent {
+    margin: 10px;
+}
+
+.helpLink {
+    color: #06f;
+    cursor: help;
+    text-decoration: underline;
+}
+
+.helpLink:hover {
+    text-decoration: none;
+}
+
+/* GRID - Shows on tax details popup */
+.grid {
+    border: 1px solid #ccc;
+    border-collapse: collapse;
+    margin-top: 5px;
+}
+
+.grid td {
+    background: #eee;
+    border: 1px solid #ccc;
+    padding: 5px;
+}
+
+.th_grid {
+    background: #ccc;
+}
+
+.th_grid td {
+    background: #ccc;
+    border: none;
+    font-weight: bold;
+    padding: 5px;
+    text-align: center;
+}
+
+.page_v1_bottom,
+.page_v2_bottom,
+.clear {
+    clear: both;
+}
+
+.page_v1_bottom {
+    padding: 5px;
+    margin-top: 10px;
+}
+
+.page_v1_bottom p {
+    text-align: center;
+    margin: 0;
+    color: #999;
+}
+
+#powered {
+    margin: 10px 0;
+    color: #999;
+    font-size: 9px;
+    text-align: center;
+}
+
+#powered p {
+    margin: 0;
+}
+
+.itin,
+.co {
+    border: 1px solid #999;
+    margin-top: 10px;
+}
+
+.itin_header,
+.co_header {
+    background: #eee;
+    font-weight: bold;
+    padding: 5px;
+}
+
+.itin_info {
+    background: #fff;
+}
+
+/* Itinerary Total Table */
+.table_itinerary_total_container {
+    width: auto;
+}
+
+.table_itinerary_total thead td {
+    text-align: center;
+    background: #fff;
+}
+
+#itin_totals_v2 .itin_header_price_ad {
+    padding: 0 5px 5px;
+}
+
+#itin_totals_v2 .itin_sub_details .table_itinerary_total {
+    margin: 0;
+    width: auto;
+    background: #eee;
+}
+
+#itin_totals_v2 .itin_sub_details .table_itinerary_total td.paymentCash {
+    background: #efe;
+    padding-right: 5px;
+}
+
+#itin_totals_v2 .itin_sub_details .table_itinerary_total td.paymentCashPoints {
+    background: #def;
+}
+
+#itin_totals_v2 .itin_sub_details .table_itinerary_total td.paymentCashPoints,
+#itin_totals_v2 .itin_sub_details .table_itinerary_total td.paymentPointsRequired,
+#itin_totals_v2 .itin_sub_details .table_itinerary_total td.Total_Col_3 {
+    border-collapse: separate;
+    border-left: 1px solid #fff;
+}
+
+#itin_totals_v2 .itin_sub_details .table_itinerary_total td.paymentPointsRequired,
+#itin_totals_v2 .itin_sub_details .table_itinerary_total td.paymentAdditionalCash {
+    background: #def;
+}
+
+#itin_totals_v2 .itin_sub_details .table_itinerary_total td.Total_Col_2 {
+    background: #efe;
+    border-collapse: separate;
+    border-right: 1px solid #fff;
+    text-align: right;
+}
+
+#itin_totals_v2 .itin_sub_details .table_itinerary_total td.Total_Col_3,
+#itin_totals_v2 .itin_sub_details .table_itinerary_total td.Total_Col_4 {
+    background: #def;
+}
+
+#itin_totals_v2 .itin_sub_details .table_itinerary_total thead {
+    font-weight: bold;
+    vertical-align: bottom;
+}
+
+#itin_totals_v2 .itin_sub_details .table_itinerary_total td {
+    padding: 3px 10px 3px 5px;
+}
+
+#itin_totals_v2 .table_itinerary_total tr.PricePointsRowV2 .Total_Col_2,
+#itin_totals_v2 .table_itinerary_total tr.PricePointsRowV2 .Total_Col_3,
+#itin_totals_v2 .table_itinerary_total tr.PricePointsRowV2 .Total_Col_4 {
+    border-collapse: separate;
+    border-top: 1px dashed #666;
+}
+
+#itin_totals_v2 .itin_sub_details .table_itinerary_total td.paymentAdditionalCash,
+#itin_totals_v2 .itin_sub_details .table_itinerary_total td.Total_Col_4 {
+    border-collapse: separate;
+    border-left: 1px solid #6bbfe6;
+}
+
+#itin_totals_v2 .table_itinerary_total .V2 td.value {
+    border-collapse: separate;
+    border-top: 1px dashed #666;
+}
+
+#itin_totals_v2 .table_itinerary_total .V2 td.Direct_Total_Col {
+    border-top: none;
+}
+
+#itin_totals_v2 .table_itinerary_total .V2 td.Balance_Due_Col,
+#itin_totals_v2 .table_itinerary_total .V2 td.Direct_Total_Col {
+    background: #eee;
+    border-collapse: separate;
+    border-left: 1px solid #fff;
+}
+
+#itin_totals_v2 .table_itinerary_total .V2 td.Direct_Total_Col {
+    background: #ccc;
+}
+
+#itin_totals_v2 .table_itinerary_total .V2 td.label {
+    text-align: right;
+}
+
+#itin_totals_v2 .table_itinerary_total .V2 td.value {
+    font-weight: bold;
+}
+
+.table_itinerary_total .value {
+    text-align: right;
+}
+
+input.AgentMarkup {
+    text-align: right;
+}
+
+input.NewTotal {
+    background: #ccc;
+    text-align: right;
+}
+
+.TotalPriceRowV2 td {
+    font-weight: bold;
+}
+
+.PricePointsRowV2 td {
+    font-weight: bold;
+}
+
+.PriceRowDoubleV2 td {
+    font-weight: bold;
+}
+
+#itin_totals_v2 .itin_sub_details .table_itinerary_total .PricePointsRowV2 td.Total_Col_2,
+#itin_totals_v2 .itin_sub_details .table_itinerary_total .PriceRowDoubleV2 td {
+    background: #def;
+}
+
+.PricePointsRowV2 td,
+#itin_totals_v2 .itin_sub_details .table_itinerary_total .PriceRowDoubleV2 td.Total_Col_1 {
+    background: #def;
+}
+
+td .extraInfo {
+    background: #eee !important;
+}
+
+#itin_totals_v2 .itin_sub_details .table_itinerary_total .PriceRowDoubleV2 {
+    color: darkorange;
+}
+
+#itin_totals_v2 .itin_sub_details .table_itinerary_total .CommissionRowV2 td {
+    padding-top: 10px;
+}
+
+.itin_sub_details .table_itinerary_total {
+    background: #eee;
+    border: none;
+    margin: 5px;
+}
+
+.itin_sub_details .table_itinerary_total td {
+    padding: 3px 5px;
+}
+
+.avail_details .avail_details_item .activity_choice_row select,
+.co_details img {
+    margin-right: 5px;
+}
+
+.itin_info, .itin_sub_header, .itin_sub_footer, .co .co_details, .co_footer, {
+    border: none;
+    font-size: 11px;
+    padding: 5px;
+}
+
+.itin_sub_header {
+    font-weight: bold;
+    font-size: 11px;
+    padding: 5px;
+    margin-bottom: 5px;
+    background: #eee;
+}
+
+.quote_view .hotel_name {
+    float: left;
+    margin-right: 10px;
+    margin-bottom: 0;
+}
+
+.quote_view .starRating {
+    float: left;
+}
+
+.quote_view .adr {
+    clear: both;
+    margin-bottom: 10px;
+}
+
+.quote_package_price {
+    width: 100%;
+    display: block;
+}
+
+.quote_view .grid {
+    margin-top: 5px;
+}
+
+.quote_price {
+    float: right;
+}
+
+.quote_view .helpLink {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.quote_view .helpLink:hover {
+    text-decoration: none;
+}
+
+.quote_view_hr {
+    background: #eee;
+    font-weight: bold;
+    padding: 5px;
+    margin-bottom: 5px;
+    overflow: hidden;
+}
+
+.quote_view_header {
+    float: left;
+}
+
+#confirm .itin_sub_details {
+    padding-left: 10px;
+}
+
+.itin_sub_details .itin_room,
+.itin_sub_details .itin_car,
+.itin_sub_details .itin_air {
+    text-align: right;
+    font-weight: bold;
+}
+
+.itin_sub_footer {
+    padding: 5px;
+}
+
+.co input,
+.co select,
+.co option {
+    font-weight: normal;
+    margin: 0 0 2px 0;
+}
+
+.co option {
+    padding: 0 5px 0 0;
+}
+
+.co select {
+    padding-left: 0;
+}
+
+.co_info {
+    background: #eee;
+    margin: 5px 5px 0;
+    padding: 5px;
+}
+
+#payment .co_info {
+    font-weight: bold;
+}
+
+.co_info .red {
+    color: red;
+    font-size: 10px;
+    font-style: normal;
+}
+
+.co_info .required_fields {
+    display: block;
+    font-weight: bold;
+    background: #fff;
+    padding: 5px;
+}
+
+.button_container {
+    background: #ccc;
+    border: none;
+    margin: 10px 0;
+    padding: 5px;
+    text-align: right;
+}
+
+.button_container table {
+    width: auto;
+}
+
+.co .co_details,
+.avail_table a {
+    font-size: 11px;
+}
+
+.city_page_details,
+.login_details {
+    background: #fff;
+    border-top: 1px solid #ccc;
+    font-size: 11px;
+    padding: 5px;
+}
+
+.login_header,
+.profile_history_header {
+    background: #333;
+    color: #fff;
+    font-size: 13px;
+    font-weight: bold;
+    padding: 2px 5px;
+}
+
+.itin .itin_sub_details table {
+    width: auto;
+}
+
+#itinerary table .itin .itin_sub_details .table_itinerary_total_container,
+#itinerary table .itin .itin_sub_details .table_itinerary_total_container .table_itinerary_total {
+    width: 100%;
+}
+
+#itinerary table .itin .itin_sub_details table {
+    width: 300px;
+}
+
+#itinerary .itin .itin_sub_details table {
+    width: 100%;
+}
+
+#itinerary table .itin .itin_sub_details td {
+    padding: 0 3px 2px;
+    background: transparent;
+}
+
+#itinerary .page_v1_c2_wide table,
+#itinerary .page_v1_c2_wide table tr td {
+    text-align: left !important;
+    white-space: normal !important;
+}
+
+#select .air_matrix_footer,
+.TotalLineRowV2 {
+    display: none;
+}
+
+.modify_search input,
+.modify_search select {
+    padding: 2px;
+    margin: 1px;
+}
+
+.air_matrix_price img,
+.avail_header .air_prices_bar .price_or_points,
+#activity-detail .avail_details_item td,
+.itin_sub_details,
+#itin_totals_v2 .itin_sub_details .table_itinerary_total thead td {
+    padding: 5px;
+}
+
+.avail_details .org_dest_descripxion,
+.avail_details tr.avail_details_item .submit_link,
+.total_travelers {
+    padding-left: 5px;
+}
+
+#select .avail {
+    margin-bottom: 10px;
+}
+
+#select .avail .avail_info a,
+.tabs_on a,
+.tabs_sub_bar a {
+    color: #fff;
+}
+
+#confirm .air_matrix_details .air_matrix_price img,
+.co .co_details #check_amount,
+.co .co_details #cert_amount,
+.co .co_details #cash_amount {
+    width: 69px;
+}
+
+#search .yui-skin-sam .yui-ac-content li.yui-ac-highlight {
+    background: url(/images/pointer.png) top left repeat-y;
+}
+
+/* Targets IE6 (and earlier) to show .gif instead of .png */
+* html .star-rating-large {
+    background: url(/images/stars-large-bg.gif) top left no-repeat;
+}
+
+/* Targets IE6 (and earlier) to show .gif for default black background of find hotel name overlay */
+* html #hotel_results .star-rating-large {
+    background: url(/images/stars-large-bg-black.gif) top left no-repeat;
+}
+
+.star-rating-large {
+    background: url(/images/stars-large-bg.png) top left no-repeat;
+}
+
+#choose_air_seats .large_logo {
+    background: url(/images/lg_logo_bg.png) top left no-repeat;
+}
+
+.malibu_hotel_avail_details a.malibu_hotel_avail_more {
+    background: url(/images/popup.png) top left no-repeat;
+}
+
+.map_active .hotelOption .mapNumber {
+    background: url(/images/gmap_marker_default.png) top left no-repeat;
+    display: block;
+    float: left;
+    width: 20px;
+    height: 34px;
+    margin-right: 5px;
+    padding-top: 3px;
+    text-align: center;
+    font-size: 10px;
+}
+
+/* Below targets IE6 to apply .jpg instead of .png */
+
+* html .map_active .hotelOption .mapNumber {
+    background: url(/images/gmap_marker_default.jpg) top left no-repeat;
+}
+
+/* Hotel Filters - Price Slider */
+
+#price_filter_slider {
+    background: url(/images/dual_thumb_bg.gif) top left no-repeat;
+}
+
+#price_filter_highlight {
+    background: url(/images/dual_thumb_highlight.gif) top left repeat-x;
+}
+
+#price_filter_minthumb,
+#price_filter_maxthumb {
+    background: url(/images/r-thumb-round.gif) top center no-repeat;
+}
+
+/* Hotel Filters - Amenity Icons */
+
+#amenities_filter_all_inclusive,
+.amenities_filter_all_inclusive {
+    background: url(/images/allInclusive_neg.png) top left no-repeat;
+}
+
+#amenities_filter_continental_meal_plan,
+.amenities_filter_continental_meal_plan {
+    background: url(/images/mealPlan_neg.png) top left no-repeat;
+}
+
+#amenities_filter_bar_lounge_onsite,
+.amenities_filter_bar_lounge_onsite {
+    background: url(/images/bar_neg.png) top left no-repeat;
+}
+
+#amenities_filter_restaurant_onsite,
+.amenities_filter_restaurant_onsite {
+    background: url(/images/restaurant_neg.png) top left no-repeat;
+}
+
+#amenities_filter_room_service,
+.amenities_filter_room_service {
+    background: url(/images/roomService_neg.png) top left no-repeat;
+}
+
+#amenities_filter_internet,
+.amenities_filter_internet {
+    background: url(/images/internet_neg.png) top left no-repeat;
+}
+
+#amenities_filter_pets_allowed,
+.amenities_filter_pets_allowed {
+    background: url(/images/pets_neg.png) top left no-repeat;
+}
+
+#amenities_filter_free_parking,
+.amenities_filter_free_parking {
+    background: url(/images/parking_neg.png) top left no-repeat;
+}
+
+#amenities_filter_business_center,
+.amenities_filter_business_center {
+    background: url(/images/businessCenter_neg.png) top left no-repeat;
+}
+
+#amenities_filter_golf,
+.amenities_filter_golf {
+    background: url(/images/golf_neg.png) top left no-repeat;
+}
+
+#amenities_filter_gym,
+.amenities_filter_gym {
+    background: url(/images/gym_neg.png) top left no-repeat;
+}
+
+#amenities_filter_spa,
+.amenities_filter_spa {
+    background: url(/images/spa_neg.png) top left no-repeat;
+}
+
+#amenities_filter_swimming_pool,
+.amenities_filter_swimming_pool {
+    background: url(/images/pool_neg.png) top left no-repeat;
+}
+
+#amenities_filter_meeting_rooms,
+.amenities_filter_meeting_rooms {
+    background: url(/images/meetingRooms_neg.png) top left no-repeat;
+}
+
+/* Hotel Filters - Amenity Icons (lte IE 7)
+	The following specifically targets IE6 (and earlier) to use .jpg instead of .png
+*/
+
+* html #amenities_filter_all_inclusive {
+    background: url(/images/allInclusive.jpg) top left no-repeat;
+}
+
+* html #amenities_filter_all_inclusive.li_hover {
+    background: url(/images/allInclusive_hover.jpg) top left no-repeat;
+}
+
+* html .malibu_hotel_avail_summary .amenities_filter_all_inclusive {
+    background: url(/images/allInclusive_hover.jpg) top left no-repeat;
+}
+
+/* ------------------------------------- */
+
+* html #amenities_filter_continental_meal_plan {
+    background: url(/images/mealPlan.jpg) top left no-repeat;
+}
+
+* html #amenities_filter_continental_meal_plan.li_hover {
+    background: url(/images/mealPlan_hover.jpg) top left no-repeat;
+}
+
+* html .malibu_hotel_avail_summary .amenities_filter_continental_meal_plan {
+    background: url(/images/mealPlan_hover.jpg) top left no-repeat;
+}
+
+/* ------------------------------------- */
+
+* html #amenities_filter_bar_lounge_onsite {
+    background: url(/images/bar.jpg) top left no-repeat;
+}
+
+* html #amenities_filter_bar_lounge_onsite.li_hover {
+    background: url(/images/bar_hover.jpg) top left no-repeat;
+}
+
+* html .malibu_hotel_avail_summary .amenities_filter_bar_lounge_onsite {
+    background: url(/images/bar_hover.jpg) top left no-repeat;
+}
+
+/* ------------------------------------- */
+
+* html #amenities_filter_restaurant_onsite {
+    background: url(/images/restaurant.jpg) top left no-repeat;
+}
+
+* html #amenities_filter_restaurant_onsite.li_hover {
+    background: url(/images/restaurant_hover.jpg) top left no-repeat;
+}
+
+* html .malibu_hotel_avail_summary .amenities_filter_restaurant_onsite {
+    background: url(/images/restaurant_hover.jpg) top left no-repeat;
+}
+
+/* ------------------------------------- */
+
+* html #amenities_filter_room_service {
+    background: url(/images/roomService.jpg) top left no-repeat;
+}
+
+* html #amenities_filter_room_service.li_hover {
+    background: url(/images/roomService_hover.jpg) top left no-repeat;
+}
+
+* html .malibu_hotel_avail_summary .amenities_filter_room_service {
+    background: url(/images/roomService_hover.jpg) top left no-repeat;
+}
+
+/* ------------------------------------- */
+
+* html #amenities_filter_internet {
+    background: url(/images/internet.jpg) top left no-repeat;
+}
+
+* html #amenities_filter_internet.li_hover {
+    background: url(/images/internet_hover.jpg) top left no-repeat;
+}
+
+* html .malibu_hotel_avail_summary .amenities_filter_internet {
+    background: url(/images/internet_hover.jpg) top left no-repeat;
+}
+
+/* ------------------------------------- */
+
+* html #amenities_filter_pets_allowed {
+    background: url(/images/pets.jpg) top left no-repeat;
+}
+
+* html #amenities_filter_pets_allowed.li_hover {
+    background: url(/images/pets_hover.jpg) top left no-repeat;
+}
+
+* html .malibu_hotel_avail_summary .amenities_filter_pets_allowed {
+    background: url(/images/pets_hover.jpg) top left no-repeat;
+}
+
+/* ------------------------------------- */
+
+* html #amenities_filter_free_parking {
+    background: url(/images/parking.jpg) top left no-repeat;
+}
+
+* html #amenities_filter_free_parking.li_hover {
+    background: url(/images/parking_hover.jpg) top left no-repeat;
+}
+
+* html .malibu_hotel_avail_summary .amenities_filter_free_parking {
+    background: url(/images/parking_hover.jpg) top left no-repeat;
+}
+
+/* ------------------------------------- */
+
+* html #amenities_filter_business_center {
+    background: url(/images/businessCenter.jpg) top left no-repeat;
+}
+
+* html #amenities_filter_business_center.li_hover {
+    background: url(/images/businessCenter_hover.jpg) top left no-repeat;
+}
+
+* html .malibu_hotel_avail_summary .amenities_filter_business_center {
+    background: url(/images/businessCenter_hover.jpg) top left no-repeat;
+}
+
+/* ------------------------------------- */
+
+* html #amenities_filter_golf {
+    background: url(/images/golf.jpg) top left no-repeat;
+}
+
+* html #amenities_filter_golf.li_hover {
+    background: url(/images/golf_hover.jpg) top left no-repeat;
+}
+
+* html .malibu_hotel_avail_summary .amenities_filter_golf {
+    background: url(/images/golf_hover.jpg) top left no-repeat;
+}
+
+/* ------------------------------------- */
+
+* html #amenities_filter_gym {
+    background: url(/images/gym.jpg) top left no-repeat;
+}
+
+* html #amenities_filter_gym.li_hover {
+    background: url(/images/gym_hover.jpg) top left no-repeat;
+}
+
+* html .malibu_hotel_avail_summary .amenities_filter_gym {
+    background: url(/images/gym_hover.jpg) top left no-repeat;
+}
+
+/* ------------------------------------- */
+
+* html #amenities_filter_spa {
+    background: url(/images/spa.jpg) top left no-repeat;
+}
+
+* html #amenities_filter_spa.li_hover {
+    background: url(/images/spa_hover.jpg) top left no-repeat;
+}
+
+* html .malibu_hotel_avail_summary .amenities_filter_spa {
+    background: url(/images/spa_hover.jpg) top left no-repeat;
+}
+
+/* ------------------------------------- */
+
+* html #amenities_filter_swimming_pool {
+    background: url(/images/pool.jpg) top left no-repeat;
+}
+
+* html #amenities_filter_swimming_pool.li_hover {
+    background: url(/images/pool_hover.jpg) top left no-repeat;
+}
+
+* html .malibu_hotel_avail_summary .amenities_filter_swimming_pool {
+    background: url(/images/pool_hover.jpg) top left no-repeat;
+}
+
+/* ------------------------------------- */
+
+* html #amenities_filter_meeting_rooms {
+    background: url(/images/meetingRooms.jpg) top left no-repeat;
+}
+
+* html #amenities_filter_meeting_rooms.li_hover {
+    background: url(/images/meetingRooms_hover.jpg) top left no-repeat;
+}
+
+* html .malibu_hotel_avail_summary .amenities_filter_meeting_rooms {
+    background: url(/images/meetingRooms_hover.jpg) top left no-repeat;
+}
+
+#lightbox .detailPricingMatrix {
+    width: 630px !important;
+    height: 400px !important
+}
+
+/* Gender radio boxes in the checkout page. */
+.genderContainer {
+    position: relative;
+    float: left;
+    margin-right: 12px;
+}

@@ -1,0 +1,17 @@
+---
+javascript:
+- externals:
+  - file1
+  - file2
+- externals-admin:
+  - file1
+  - file3
+stylesheet:
+- externals-webapp:
+  - file1
+  - file2
+  - file3
+- ezrez-base:
+  - file2
+  - file3
+
